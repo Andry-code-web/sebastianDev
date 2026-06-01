@@ -1,0 +1,60 @@
+@import url('/css/fonts.css');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e7e6e2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'font2';
+}
+
+p,
+a,
+span,
+li,
+li a {
+    font-family: 'font1';
+}
+
+/* colors */
+:root {
+    --principal: #042c53;
+    --secundario: #e7e6e2;
+    --tercero: #000000;
+    --cuarto: #faf9f7;
+}
+
+/* variables css */
+.text-principal {
+    color: var(--principal);
+}
+
+.text-secundario {
+    color: var(--secundario);
+}
+
+.bg-principal {
+    background-color: var(--principal);
+}
+
+.bg-secundario {
+    background-color: var(--secundario);
+}
+
+.bg-tercero {
+    background-color: var(--tercero);
+}
+
+.bg-cuarto {
+    background-color: var(--cuarto);
+}
