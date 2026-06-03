@@ -1,662 +1,499 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="SL Strategic Systems – Agencia de tecnología en Arequipa, Perú. Desarrollamos landing pages, páginas web, CRM a medida y asesorías digitales para que tu negocio escale.">
+    <meta name="keywords" content="páginas web Arequipa, landing page Peru, CRM personalizado, agencia digital Arequipa, desarrollo web Peru">
+    <meta name="author" content="SL Strategic Systems">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
-    <title>SL end coding</title>
+    <title>SL Strategic Systems – Tecnología que Escala tu Negocio | Arequipa, Perú</title>
 </head>
 
 <body>
 
-    <!-- 
-    colores de la pagina 
+    <!--
+    colores de la pagina
     principal: #042c53
     secundario: #e7e6e2
     tercero: #000000
     cuarto: #faf9f7
     -->
 
-    <header class="flex justify-around items-center py-4 px-8 text-tercero shadow-sm">
-        <div class="flex items-center gap-4">
-            <img src="/public/logo.png" class="h-10 w-14" alt="Logo SL end coding">
+    <!-- ===== HEADER ===== -->
+    <header id="header" class="site-header">
+        <div class="header-inner">
+            <div class="header-logo">
+                <img src="./public/logo.png" class="logo-img" alt="Logo SL Strategic Systems">
+                <span class="logo-text">SL <span class="logo-accent">Strategic</span></span>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
+                    <li><a href="#resultados">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contacto" class="btn-primary" id="header-cta">Asesoría gratuita</a>
+                <!-- Hamburger -->
+                <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
-        <nav class="">
-            <ul class="flex gap-8">
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Como funciona</a></li>
-                <li><a href="#">Testimonios</a></li>
-                <li><a href="#">Contacto</a></li>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil">
+            <ul>
+                <li><a href="#servicios" class="mobile-link">Servicios</a></li>
+                <li><a href="#como-trabajamos" class="mobile-link">Cómo trabajamos</a></li>
+                <li><a href="#resultados" class="mobile-link">Testimonios</a></li>
+                <li><a href="#contacto" class="mobile-link">Contacto</a></li>
+                <li><a href="#contacto" class="btn-primary mobile-cta">Asesoría gratuita</a></li>
             </ul>
         </nav>
-
-        <div class="bg-[#042c53] text-white px-4 py-2 rounded-lg">
-            <a href="#">Asesoria gratuita</a>
-        </div>
     </header>
 
     <main>
-        <!-- banner -->
-        <section class="w-full h-screen flex flex-col items-center justify-center">
-            <div class="w-[70%] mx-auto flex flex-col gap-10">
-                <div class="w-full flex flex-col gap-5">
-                    <div class="w-fit flex items-center gap-2 py-1 px-5 rounded-full bg-[#042c53]/[0.5]">
-                        <span class="bg-[#042c53] w-2 h-2 rounded-full"></span>
-                        <p class="text-secundario">Servicio tec de alto rendimiento</p>
-                    </div>
-
-                    <h1 class="text-6xl">Transformamos empresas con tecnologia que esta hecha para escalar</h1>
-                    <p class="text-xl text-principal w-[70%]">Ayudamos a empresas a resolver problemas complejos y a
-                        mejorar su
-                        eficiencia
-                        mediante soluciones
-                        tecnológicas personalizadas.</p>
-
-                    <!-- acciones -->
-                    <div class="w-fit bg-[#042c53] text-white px-4 py-2 rounded-lg shadow-md">
-                        <a href="" class="flex items-center justify-center gap-2">Agendar una reunion gratuita <i
-                                class="ph ph-arrow-right"></i></a>
-                    </div>
+        <!-- ===== HERO / BANNER ===== -->
+        <section class="hero-section" id="inicio">
+            <div class="hero-content animate-on-scroll">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <p>Tecnología estratégica de alto rendimiento · Arequipa, Perú</p>
                 </div>
 
-                <!-- estadisticas -->
-                <div class="w-[80%] grid grid-cols-4 gap-2">
-                    <div class="w-full h-full bg-white shadow-md rounded-lg p-4 w-fit">
-                        <p class="text-3xl font-bold">+50</p>
-                        <h5 class="text-sm text-gray-500">Clientes</h5>
-                    </div>
-                    <div class="w-full h-full bg-white shadow-md rounded-lg p-4 w-fit">
-                        <p class="text-3xl font-bold">+$10M</p>
-                        <h5 class="text-sm text-gray-500">Ventas generadas</h5>
-                    </div>
-                    <div class="w-full h-full bg-white shadow-md rounded-lg p-4 w-fit">
-                        <p class="text-3xl font-bold">+89%</p>
-                        <h5 class="text-sm text-gray-500">Tasa de satisfaccion</h5>
-                    </div>
-                    <div class="w-full h-full bg-white shadow-md rounded-lg p-4 w-fit">
-                        <p class="text-3xl font-bold">+2</p>
-                        <h5 class="text-sm text-gray-500">Años en el mercado</h5>
-                    </div>
+                <h1 class="hero-title">
+                    Transformamos negocios de Arequipa con tecnología que está hecha para <span class="text-highlight">escalar</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Ayudamos a empresas arequipeñas a resolver problemas reales y mejorar su eficiencia mediante soluciones tecnológicas personalizadas: landing pages, páginas web, CRM y asesorías.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn-primary btn-lg" id="hero-cta-main">
+                        Agendar reunión gratuita <i class="ph ph-arrow-right"></i>
+                    </a>
+                    <a href="#servicios" class="btn-ghost" id="hero-cta-services">
+                        Ver servicios <i class="ph ph-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="hero-stats animate-on-scroll" style="animation-delay: 0.2s;">
+                <div class="stat-card">
+                    <p class="stat-number">+30</p>
+                    <span class="stat-label">Clientes en Arequipa</span>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">+S/.150K</p>
+                    <span class="stat-label">Ventas generadas</span>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">+95%</p>
+                    <span class="stat-label">Tasa de satisfacción</span>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">+2</p>
+                    <span class="stat-label">Años en el mercado</span>
                 </div>
             </div>
         </section>
 
-        <!-- problemas -->
-        <section class="w-full h-auto flex flex-col items-center justify-center py-20 bg-cuarto">
-            <div class="w-[70%] mx-auto flex justify-center items-center flex-col gap-15">
-                <div class="w-fit flex justify-center items-center flex-col gap-2">
-                    <p class="text-principal uppercase text-sm font-bold tracking-widest">Problemas reales</p>
-                    <h2 class="text-principal text-5xl">¿Te suena algunos de estos problemas?</h2>
+        <!-- ===== PROBLEMAS ===== -->
+        <section class="problems-section bg-cuarto" id="problemas">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <p class="section-label">Problemas reales</p>
+                    <h2 class="section-title">¿Te suenan algunos de estos problemas?</h2>
                 </div>
 
-                <!-- cards -->
-                <div class="w-[90%] mx-auto grid grid-cols-3 gap-5">
-                    <div class="w-full bg-white shadow-md rounded-lg p-4 flex flex-col gap-5">
-                        <span
-                            class="w-10 h-10 flex justify-center items-center bg-purple-300/50 text-[#042c53] rounded-lg">
-                            <i class="ph ph-chart-line-down text-xl"></i>
+                <div class="problems-grid">
+                    <div class="problem-card animate-on-scroll">
+                        <span class="problem-icon">
+                            <i class="ph ph-chart-line-down"></i>
                         </span>
-                        <p class="text-xl font-bold text-principal">Estás invirtiendo en publicidad sin ver resultados
-                        </p>
-                        <h3 class="text-md text-gray-500">Gastas miles de pesos en anuncios que no convierten. Tu
-                            presupuesto se
-                            evapora y los
-                            clientes no llegan.</h3>
+                        <p class="problem-heading">Publicidad sin resultados reales</p>
+                        <p class="problem-desc">Gastas en anuncios que no convierten. Tu presupuesto se evapora y los clientes no llegan a tu negocio en Arequipa.</p>
                     </div>
 
-                    <div class="w-full bg-white shadow-md rounded-lg p-4 flex flex-col gap-5">
-                        <span
-                            class="w-10 h-10 flex justify-center items-center bg-purple-300/50 text-[#042c53] rounded-lg">
-                            <i class="ph ph-chart-line-down text-xl"></i>
+                    <div class="problem-card animate-on-scroll" style="animation-delay: 0.1s;">
+                        <span class="problem-icon">
+                            <i class="ph ph-globe-x"></i>
                         </span>
-                        <p class="text-xl font-bold text-principal">Estás invirtiendo en publicidad sin ver resultados
-                        </p>
-                        <h3 class="text-md text-gray-500">Gastas miles de pesos en anuncios que no convierten. Tu
-                            presupuesto se
-                            evapora y los
-                            clientes no llegan.</h3>
+                        <p class="problem-heading">Tu página web no genera ventas</p>
+                        <p class="problem-desc">Tienes una web desactualizada, lenta o que simplemente no comunica el valor de tu empresa a tus clientes potenciales.</p>
                     </div>
 
-                    <div class="w-full bg-white shadow-md rounded-lg p-4 flex flex-col gap-5">
-                        <span
-                            class="w-10 h-10 flex justify-center items-center bg-purple-300/50 text-[#042c53] rounded-lg">
-                            <i class="ph ph-chart-line-down text-xl"></i>
+                    <div class="problem-card animate-on-scroll" style="animation-delay: 0.2s;">
+                        <span class="problem-icon">
+                            <i class="ph ph-users-three"></i>
                         </span>
-                        <p class="text-xl font-bold text-principal">Estás invirtiendo en publicidad sin ver resultados
-                        </p>
-                        <h3 class="text-md text-gray-500">Gastas miles de pesos en anuncios que no convierten. Tu
-                            presupuesto se
-                            evapora y los
-                            clientes no llegan.</h3>
+                        <p class="problem-heading">Pierdes clientes por desorganización</p>
+                        <p class="problem-desc">No tienes un sistema para hacer seguimiento a tus leads. Los contactos se pierden en WhatsApp, hojas de cálculo o cuadernos.</p>
                     </div>
-
                 </div>
 
-                <p class="text-principal text-lg text-center w-[70%] mx-auto">Si te identificas con alguno de estos
-                    problemas, <span class="text-[#042c53] font-bold">SL end coding</span> es la solucion.
+                <p class="problems-cta animate-on-scroll">
+                    Si te identificas con alguno de estos problemas, <span class="font-bold text-principal">SL Strategic Systems</span> es la solución que necesitas en Arequipa.
                 </p>
             </div>
         </section>
 
-        <!-- soluciones -->
-        <section class="w-full h-screen flex flex-col items-center justify-center">
-            <div class="w-[70%] mx-auto flex justify-center items-center gap-15">
-                <div class=" w-1/2 flex flex-col gap-5">
-                    <p class="text-principal uppercase text-sm font-bold tracking-widest">La solucion</p>
-                    <h2 class="text-principal text-5xl">Hacemos tecnologias que resuelvan tus problemas hoy
-                        y que <span class="text-principal font-bold">crezcan contigo mañana.</span></h2>
-
-                    <p class="text-principal text-md w-[90%] mx-auto">No creamos soluciones que duren poco
-                        tiempo, creamos
-                        tecnologías diseñadas para adaptarse a tus necesidades cambiantes y escalar contigo a medida que
-                        tu
-                        negocio crece.</p>
-
-                    <div class="w-fit bg-[#042c53] text-white px-4 py-2 rounded-lg shadow-md">
-                        <a href="" class="flex items-center justify-center gap-2">Agendar una reunion gratuita <i
-                                class="ph ph-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="w-1/2 flex flex-col gap-5">
-                    <div class=" flex items-start justify-center bg-white p-4 shadow-md rounded-lg gap-2 shadow-md">
-                        <span class="rounded-lg bg-purple-200 text-[#042c53] flex items-center justify-center p-2"><i
-                                class="ph ph-chart-polar text-xl"></i></span>
-                        <div>
-                            <p class="text-principal text-md font-bold tracking-widest">Estrategias basada en datos</p>
-                            <h2 class="text-principal text-sm">Analizamos tu mercado, competencia y audiencia para
-                                diseñar una estrategia a
-                                medida.</h2>
-                        </div>
-                    </div>
-                    <div class="flex items-start justify-center bg-white p-4 shadow-md rounded-lg gap-2 shadow-md">
-                        <span class="rounded-lg bg-purple-200 text-[#042c53] flex items-center justify-center p-2"><i
-                                class="ph ph-chart-polar text-xl"></i></span>
-                        <div>
-                            <p class="text-principal text-md font-bold tracking-widest">Estrategias basada en datos</p>
-                            <h2 class="text-principal text-sm">Analizamos tu mercado, competencia y audiencia para
-                                diseñar una estrategia a
-                                medida.</h2>
-                        </div>
-                    </div>
-                    <div class="flex items-start justify-center bg-white p-4 shadow-md rounded-lg gap-2 shadow-md">
-                        <span class="rounded-lg bg-purple-200 text-[#042c53] flex items-center justify-center p-2"><i
-                                class="ph ph-chart-polar text-xl"></i></span>
-                        <div>
-                            <p class="text-principal text-md font-bold tracking-widest">Estrategias basada en datos</p>
-                            <h2 class="text-principal text-sm">Analizamos tu mercado, competencia y audiencia para
-                                diseñar una estrategia a
-                                medida.</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- servicios -->
-        <section class="w-full h-auto flex flex-col items-center justify-center py-20 bg-cuarto">
-            <div class="w-[70%] mx-auto flex justify-center items-center flex-col gap-15">
-                <div class="w-fit flex justify-center items-center flex-col gap-5">
-                    <p class="text-principal uppercase text-sm font-bold tracking-widest">Servicios</p>
-                    <h2 class="text-principal text-5xl text-center">Creamos tecnologias a la medida para resolver
-                        problemas reales
-                        de
-                        empresas reales.</h2>
-                    <p class="text-lg w-[70%] mx-auto text-center text-gray-500">Desde sistemas de gestión interna
-                        hasta
-                        plataformas de atención al
-                        cliente, desarrollamos
-                        soluciones
-                        tecnológicas que se adaptan a tus necesidades específicas y crecen contigo a medida que tu
-                        negocio
-                        evoluciona.</p>
-                </div>
-
-                <!-- cards -->
-                <div class="w-full h-full mx-auto grid grid-cols-3 gap-5">
-                    <div class="w-fit shadow-md rounded-lg bg-white flex flex-col items-start justify-center p-4 gap-5">
-                        <span
-                            class="w-12 h-12 rounded-lg bg-purple-200 text-primary flex items-center justify-center p-2">
-                            <i class="ph ph-browsers text-2xl"></i>
-                        </span>
-                        <div class="w-full flex justify-between items-center">
-                            <p class="text-primary text-2xl font-bold">Landing page</p>
-                            <p class="py-1 px-5 bg-[#042c53] border border-[#042c53] rounded-lg text-sm text-white">
-                                Paginas
-                                web
-                            </p>
-                        </div>
-                        <h3 class="text-primary text-md">Diseñada para vender</h3>
-                        <p class="text-secondary text-sm">Diseñamos landing pages optimizadas para convertir visitantes
-                            en
-                            clientes. En solo minutos
-                            tendrás
-                            una página lista para capturar leads y aumentar tus ventas.</p>
-
-                        <a href="" class="flex items-center gap-2 text-primary text-md font-bold">Quiero este
-                            servicio <i class="ph ph-arrow-right"></i></a>
-                    </div>
-
-                    <div class="w-fit shadow-md rounded-lg bg-white flex flex-col items-start justify-center p-4 gap-5">
-                        <span
-                            class="w-12 h-12 rounded-lg bg-purple-200 text-primary flex items-center justify-center p-2">
-                            <i class="ph ph-browsers text-2xl"></i>
-                        </span>
-                        <div class="w-full flex justify-between items-center">
-                            <p class="text-primary text-2xl font-bold">Landing page</p>
-                            <p class="py-1 px-5 bg-[#042c53] border border-[#042c53] rounded-lg text-sm text-white">
-                                Paginas
-                                web
-                            </p>
-                        </div>
-                        <h3 class="text-primary text-md">Diseñada para vender</h3>
-                        <p class="text-secondary text-sm">Diseñamos landing pages optimizadas para convertir visitantes
-                            en
-                            clientes. En solo minutos
-                            tendrás
-                            una página lista para capturar leads y aumentar tus ventas.</p>
-
-                        <a href="" class="flex items-center gap-2 text-primary text-md font-bold">Quiero este
-                            servicio <i class="ph ph-arrow-right"></i></a>
-                    </div>
-
-                    <div class="w-fit shadow-md rounded-lg bg-white flex flex-col items-start justify-center p-4 gap-5">
-                        <span
-                            class="w-12 h-12 rounded-lg bg-purple-200 text-primary flex items-center justify-center p-2">
-                            <i class="ph ph-browsers text-2xl"></i>
-                        </span>
-                        <div class="w-full flex justify-between items-center">
-                            <p class="text-primary text-2xl font-bold">Landing page</p>
-                            <p class="py-1 px-5 bg-[#042c53] border border-[#042c53] rounded-lg text-sm text-white">
-                                Paginas
-                                web
-                            </p>
-                        </div>
-                        <h3 class="text-primary text-md">Diseñada para vender</h3>
-                        <p class="text-secondary text-sm">Diseñamos landing pages optimizadas para convertir visitantes
-                            en
-                            clientes. En solo minutos
-                            tendrás
-                            una página lista para capturar leads y aumentar tus ventas.</p>
-
-                        <a href="" class="flex items-center gap-2 text-primary text-md font-bold">Quiero este
-                            servicio <i class="ph ph-arrow-right"></i></a>
-                    </div>
-
-                    <div class="w-fit shadow-md rounded-lg bg-white flex flex-col items-start justify-center p-4 gap-5">
-                        <span
-                            class="w-12 h-12 rounded-lg bg-purple-200 text-primary flex items-center justify-center p-2">
-                            <i class="ph ph-browsers text-2xl"></i>
-                        </span>
-                        <div class="w-full flex justify-between items-center">
-                            <p class="text-primary text-2xl font-bold">Landing page</p>
-                            <p class="py-1 px-5 bg-[#042c53] border border-[#042c53] rounded-lg text-sm text-white">
-                                Paginas
-                                web
-                            </p>
-                        </div>
-                        <h3 class="text-primary text-md">Diseñada para vender</h3>
-                        <p class="text-secondary text-sm">Diseñamos landing pages optimizadas para convertir visitantes
-                            en
-                            clientes. En solo minutos
-                            tendrás
-                            una página lista para capturar leads y aumentar tus ventas.</p>
-
-                        <a href="" class="flex items-center gap-2 text-primary text-md font-bold">Quiero este
-                            servicio <i class="ph ph-arrow-right"></i></a>
-                    </div>
-
-                    <div class="w-fit shadow-md rounded-lg bg-white flex flex-col items-start justify-center p-4 gap-5">
-                        <span
-                            class="w-12 h-12 rounded-lg bg-purple-200 text-primary flex items-center justify-center p-2">
-                            <i class="ph ph-browsers text-2xl"></i>
-                        </span>
-                        <div class="w-full flex justify-between items-center">
-                            <p class="text-primary text-2xl font-bold">Landing page</p>
-                            <p class="py-1 px-5 bg-[#042c53] border border-[#042c53] rounded-lg text-sm text-white">
-                                Paginas
-                                web
-                            </p>
-                        </div>
-                        <h3 class="text-primary text-md">Diseñada para vender</h3>
-                        <p class="text-secondary text-sm">Diseñamos landing pages optimizadas para convertir visitantes
-                            en
-                            clientes. En solo minutos
-                            tendrás
-                            una página lista para capturar leads y aumentar tus ventas.</p>
-
-                        <a href="" class="flex items-center gap-2 text-primary text-md font-bold">Quiero este
-                            servicio <i class="ph ph-arrow-right"></i></a>
-                    </div>
-
-                    <div class="w-fit shadow-md rounded-lg bg-white flex flex-col items-start justify-center p-4 gap-5">
-                        <span
-                            class="w-12 h-12 rounded-lg bg-purple-200 text-primary flex items-center justify-center p-2">
-                            <i class="ph ph-browsers text-2xl"></i>
-                        </span>
-                        <div class="w-full flex justify-between items-center">
-                            <p class="text-primary text-2xl font-bold">Landing page</p>
-                            <p class="py-1 px-5 bg-[#042c53] border border-[#042c53] rounded-lg text-sm text-white">
-                                Paginas
-                                web
-                            </p>
-                        </div>
-                        <h3 class="text-primary text-md">Diseñada para vender</h3>
-                        <p class="text-secondary text-sm">Diseñamos landing pages optimizadas para convertir visitantes
-                            en
-                            clientes. En solo minutos
-                            tendrás
-                            una página lista para capturar leads y aumentar tus ventas.</p>
-
-                        <a href="" class="flex items-center gap-2 text-primary text-md font-bold">Quiero este
-                            servicio <i class="ph ph-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- como trabajamos -->
-        <section class="w-full h-auto py-10 flex flex-col items-center justify-center">
-            <div class="w-[70%] mx-auto h-full flex flex-col items-center justify-center gap-10">
-                <div class="flex flex-col items-center justify-center gap-5">
-                    <p class="text-principal text-sm font-bold uppercase tracking-widest">Como trabajamos</p>
-                    <h2 class="text-principal text-5xl"><span class="font-bold">3</span> pasos para hacer tus sueños
-                        realidad</h2>
-                </div>
-
-                <!-- pasos -->
-                <div class="grid grid-cols-3 gap-20">
-                    <div class="flex flex-col gap-2">
-                        <div class="relative w-fit">
-                            <span class="inline-flex items-center justify-center p-3 bg-purple-200 rounded-full">
-                                <i class="ph ph-file-text text-5xl text-principal"></i>
-                            </span>
-
-                            <span
-                                class="absolute -bottom-1 -right-2 flex items-center justify-center w-8 h-8 text-principal rounded-full text-xl font-bold">
-                                01
-                            </span>
-                        </div>
-                        <h3 class="text-3xl text-principal">Descubrimiento</h3>
-                        <p class="text-md text-gray-500">Analizamos tu idea de negocio y definimos el alcance del
-                            proyecto.</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                        <div class="relative w-fit">
-                            <span class="inline-flex items-center justify-center p-3 bg-purple-200 rounded-full">
-                                <i class="ph ph-code-block text-5xl text-principal"></i>
-                            </span>
-
-                            <span
-                                class="absolute -bottom-1 -right-2 flex items-center justify-center w-8 h-8 text-principal rounded-full text-xl font-bold">
-                                02
-                            </span>
-                        </div>
-                        <h3 class="text-3xl text-principal">Desarrollo</h3>
-                        <p class="text-md text-gray-500">Diseñamos y desarrollamos tu página web con las últimas
-                            tecnologías.</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                        <div class="relative w-fit">
-                            <span class="inline-flex items-center justify-center p-3 bg-purple-200 rounded-full">
-                                <i class="ph ph-airplane-takeoff text-5xl text-principal"></i>
-                            </span>
-
-                            <span
-                                class="absolute -bottom-1 -right-2 flex items-center justify-center w-8 h-8 text-principal rounded-full text-xl font-bold">
-                                03
-                            </span>
-                        </div>
-                        <h3 class="text-3xl text-principal">Lanzamiento</h3>
-                        <p class="text-md text-gray-500">Lanzamos tu página web y te capacitamos para gestionarla.</p>
-                    </div>
-                </div>
-
-                <div class="w-fit bg-[#042c53] text-white px-4 py-2 rounded-lg shadow-md">
-                    <a href="" class="flex items-center justify-center gap-2">Empecemos a trabajar <i
-                            class="ph ph-arrow-right"></i></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- resultados -->
-        <section class="w-full h-auto flex flex-col items-center justify-center py-20 bg-cuarto">
-            <div class="w-[70%] mx-auto h-full flex flex-col items-center justify-center gap-10">
-                <div class="w-full flex flex-col items-center justify-center gap-5">
-                    <p class="text-principal text-sm font-bold uppercase tracking-widest">Resultados</p>
-                    <h2 class="text-5xl text-principal">Negocios que ya <span class="font-bold">digitalizamos</span>
-                    </h2>
-                    <p class="text-md text-gray-500">En SLendcoding hemos ayudado a más de 100 empresas a crecer y
-                        desarrollar su presencia en línea.
-                    </p>
-                </div>
-
-                <div class="w-full grid grid-cols-3 gap-5">
-                    <div class="bg-principal p-5 rounded-lg flex flex-col gap-5">
-                        <div class="w-full flex items-center justify-between">
-                            <div class="flex items-center gap-1 text-yellow-400">
-                                <i class="ph-fill ph-star text-2xl"></i>
-                                <i class="ph-fill ph-star text-2xl"></i>
-                                <i class="ph-fill ph-star text-2xl"></i>
-                                <i class="ph-fill ph-star text-2xl"></i>
-                                <i class="ph-fill ph-star text-2xl"></i>
-                            </div>
-                            <div class="text-[#e7e6e2]/[0.2]">
-                                <i class="ph ph-brackets-square text-7xl"></i>
-                            </div>
-                        </div>
-
-                        <div class="w-fit px-4 py-1 rounded-lg flex items-center gap-2 bg-purple-200">
-                            <span class="w-2 h-2 rounded-full bg-principal"></span>
-                            <p class="text-sm text-principal">+100 ventas demostrables</p>
-                        </div>
-                        <p class="text-secundario text-sm">En los últimos 3 años, hemos generado más de $100,000 en
-                            ventas
-                            para nuestros clientes a
-                            través de nuestras páginas web.
+        <!-- ===== SOLUCIONES ===== -->
+        <section class="solutions-section" id="soluciones">
+            <div class="section-container">
+                <div class="solutions-inner">
+                    <div class="solutions-text animate-on-scroll">
+                        <p class="section-label">La solución</p>
+                        <h2 class="section-title">Hacemos tecnología que resuelve tus problemas <span class="text-highlight">hoy</span> y crece contigo <span class="text-highlight">mañana</span></h2>
+                        <p class="solutions-desc">
+                            No creamos soluciones que duran poco tiempo. Diseñamos tecnologías adaptadas a tu negocio en Arequipa para que escalen contigo a medida que creces.
                         </p>
-
-                        <div class="border-t-2 border-[#e7e6e2]/[0.2] flex items-center gap-5 pt-5">
-                            <div
-                                class="w-12 h-12 bg-secundario text-principal rounded-full flex justify-center items-center">
-                                CM
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-md text-secundario">Carlos Mendoza</p>
-                                <h2 class="text-sm text-secundario font-bold">CEO, Constructora Mendoza</h2>
-                            </div>
-
-                        </div>
+                        <a href="#contacto" class="btn-primary" id="solutions-cta">
+                            Agendar reunión gratuita <i class="ph ph-arrow-right"></i>
+                        </a>
                     </div>
 
-                    <div class="bg-principal p-5 rounded-lg flex flex-col gap-5">
-                        <div class="w-full flex items-center justify-between">
-                            <div class="flex items-center gap-1 text-yellow-400">
-                                <i class="ph-fill ph-star text-2xl"></i>
-                                <i class="ph-fill ph-star text-2xl"></i>
-                                <i class="ph-fill ph-star text-2xl"></i>
-                                <i class="ph-fill ph-star text-2xl"></i>
-                                <i class="ph-fill ph-star text-2xl"></i>
-                            </div>
-                            <div class="text-[#e7e6e2]/[0.2]">
-                                <i class="ph ph-brackets-square text-7xl"></i>
+                    <div class="solutions-features animate-on-scroll" style="animation-delay: 0.15s;">
+                        <div class="feature-item">
+                            <span class="feature-icon"><i class="ph ph-chart-polar"></i></span>
+                            <div>
+                                <p class="feature-title">Estrategias basadas en datos</p>
+                                <p class="feature-desc">Analizamos tu mercado local en Arequipa, tu competencia y audiencia para diseñar una estrategia digital a medida.</p>
                             </div>
                         </div>
-
-                        <div class="w-fit px-4 py-1 rounded-lg flex items-center gap-2 bg-purple-200">
-                            <span class="w-2 h-2 rounded-full bg-principal"></span>
-                            <p class="text-sm text-principal">+100 ventas demostrables</p>
-                        </div>
-                        <p class="text-secundario text-sm">En los últimos 3 años, hemos generado más de $100,000 en
-                            ventas
-                            para nuestros clientes a
-                            través de nuestras páginas web.
-                        </p>
-
-                        <div class="border-t-2 border-[#e7e6e2]/[0.2] flex items-center gap-5 pt-5">
-                            <div
-                                class="w-12 h-12 bg-secundario text-principal rounded-full flex justify-center items-center">
-                                CM
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-md text-secundario">Carlos Mendoza</p>
-                                <h2 class="text-sm text-secundario font-bold">CEO, Constructora Mendoza</h2>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="bg-principal p-5 rounded-lg flex flex-col gap-5">
-                        <div class="w-full flex items-center justify-between">
-                            <div class="flex items-center gap-1 text-yellow-400">
-                                <i class="ph-fill ph-star text-2xl"></i>
-                                <i class="ph-fill ph-star text-2xl"></i>
-                                <i class="ph-fill ph-star text-2xl"></i>
-                                <i class="ph-fill ph-star text-2xl"></i>
-                                <i class="ph-fill ph-star text-2xl"></i>
-                            </div>
-                            <div class="text-[#e7e6e2]/[0.2]">
-                                <i class="ph ph-brackets-square text-7xl"></i>
+                        <div class="feature-item">
+                            <span class="feature-icon"><i class="ph ph-rocket-launch"></i></span>
+                            <div>
+                                <p class="feature-title">Resultados rápidos y medibles</p>
+                                <p class="feature-desc">Entregamos proyectos funcionales en plazos acordados con métricas claras de rendimiento y conversión.</p>
                             </div>
                         </div>
-
-                        <div class="w-fit px-4 py-1 rounded-lg flex items-center gap-2 bg-purple-200">
-                            <span class="w-2 h-2 rounded-full bg-principal"></span>
-                            <p class="text-sm text-principal">+100 ventas demostrables</p>
-                        </div>
-                        <p class="text-secundario text-sm">En los últimos 3 años, hemos generado más de $100,000 en
-                            ventas
-                            para nuestros clientes a
-                            través de nuestras páginas web.
-                        </p>
-
-                        <div class="border-t-2 border-[#e7e6e2]/[0.2] flex items-center gap-5 pt-5">
-                            <div
-                                class="w-12 h-12 bg-secundario text-principal rounded-full flex justify-center items-center">
-                                CM
+                        <div class="feature-item">
+                            <span class="feature-icon"><i class="ph ph-headset"></i></span>
+                            <div>
+                                <p class="feature-title">Soporte continuo post-entrega</p>
+                                <p class="feature-desc">No te dejamos solo después del lanzamiento. Te acompañamos con soporte, mantenimiento y asesoría permanente.</p>
                             </div>
-                            <div class="flex flex-col">
-                                <p class="text-md text-secundario">Carlos Mendoza</p>
-                                <h2 class="text-sm text-secundario font-bold">CEO, Constructora Mendoza</h2>
-                            </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ofertas -->
-        <section>
+        <!-- ===== SERVICIOS ===== -->
+        <section class="services-section bg-cuarto" id="servicios">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <p class="section-label">Servicios</p>
+                    <h2 class="section-title">Creamos tecnología a la medida para empresas reales de Arequipa</h2>
+                    <p class="section-subtitle">Desde sistemas de gestión interna hasta plataformas de atención al cliente — desarrollamos soluciones que se adaptan a tus necesidades específicas.</p>
+                </div>
 
+                <div class="services-grid">
+                    <!-- Landing Page -->
+                    <div class="service-card animate-on-scroll" id="service-landing">
+                        <span class="service-icon"><i class="ph ph-browsers"></i></span>
+                        <div class="service-card-header">
+                            <p class="service-name">Landing Page</p>
+                            <span class="service-tag">Páginas web</span>
+                        </div>
+                        <p class="service-tagline">Diseñada para vender</p>
+                        <p class="service-desc">Diseñamos landing pages optimizadas para convertir visitantes en clientes. En pocos días tendrás una página lista para capturar leads y aumentar tus ventas en Arequipa.</p>
+                        <ul class="service-features">
+                            <li><i class="ph ph-check-circle"></i> Diseño moderno y profesional</li>
+                            <li><i class="ph ph-check-circle"></i> Optimizada para Google (SEO)</li>
+                            <li><i class="ph ph-check-circle"></i> Integración con WhatsApp</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Quiero este servicio <i class="ph ph-arrow-right"></i></a>
+                    </div>
+
+                    <!-- CRM -->
+                    <div class="service-card animate-on-scroll" id="service-crm" style="animation-delay: 0.1s;">
+                        <span class="service-icon"><i class="ph ph-kanban"></i></span>
+                        <div class="service-card-header">
+                            <p class="service-name">CRM a medida</p>
+                            <span class="service-tag">Sistemas</span>
+                        </div>
+                        <p class="service-tagline">Organiza y cierra más ventas</p>
+                        <p class="service-desc">Sistema CRM personalizado para gestionar tus clientes, hacer seguimiento de oportunidades y nunca perder un lead. Ideal para negocios locales en Arequipa.</p>
+                        <ul class="service-features">
+                            <li><i class="ph ph-check-circle"></i> Panel de control intuitivo</li>
+                            <li><i class="ph ph-check-circle"></i> Seguimiento de leads y ventas</li>
+                            <li><i class="ph ph-check-circle"></i> Reportes y estadísticas</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Quiero este servicio <i class="ph ph-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Página Web Corporativa -->
+                    <div class="service-card animate-on-scroll" id="service-web" style="animation-delay: 0.2s;">
+                        <span class="service-icon"><i class="ph ph-globe"></i></span>
+                        <div class="service-card-header">
+                            <p class="service-name">Página Web Corporativa</p>
+                            <span class="service-tag">Páginas web</span>
+                        </div>
+                        <p class="service-tagline">Tu empresa en internet 24/7</p>
+                        <p class="service-desc">Web corporativa completa con secciones de servicios, portafolio, blog y contacto. Posiciona tu empresa en Arequipa en los primeros resultados de Google.</p>
+                        <ul class="service-features">
+                            <li><i class="ph ph-check-circle"></i> Diseño responsive (móvil + desktop)</li>
+                            <li><i class="ph ph-check-circle"></i> Posicionamiento SEO local</li>
+                            <li><i class="ph ph-check-circle"></i> Panel de administración</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Quiero este servicio <i class="ph ph-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Asesorías -->
+                    <div class="service-card animate-on-scroll" id="service-asesoria" style="animation-delay: 0.1s;">
+                        <span class="service-icon"><i class="ph ph-chalkboard-teacher"></i></span>
+                        <div class="service-card-header">
+                            <p class="service-name">Asesoría Digital</p>
+                            <span class="service-tag">Consultoría</span>
+                        </div>
+                        <p class="service-tagline">Mejora tu presencia online</p>
+                        <p class="service-desc">Analizamos tu situación digital actual y te entregamos un plan de acción claro: qué cambiar, qué optimizar y cómo atraer más clientes desde internet.</p>
+                        <ul class="service-features">
+                            <li><i class="ph ph-check-circle"></i> Auditoría de tu web actual</li>
+                            <li><i class="ph ph-check-circle"></i> Plan de mejoras priorizado</li>
+                            <li><i class="ph ph-check-circle"></i> Seguimiento mensual</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Quiero este servicio <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- contactanos -->
-        <section class="w-full min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
-            style="background: linear-gradient(135deg, #020f1f 0%, #042c53 50%, #0a1628 100%);">
+        <!-- ===== CÓMO TRABAJAMOS ===== -->
+        <section class="process-section" id="como-trabajamos">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <p class="section-label">Cómo trabajamos</p>
+                    <h2 class="section-title"><span class="font-bold">3 pasos</span> para llevar tu negocio al siguiente nivel</h2>
+                </div>
 
-            <!-- Blobs animados de fondo (efecto agua) -->
+                <div class="process-grid">
+                    <div class="process-step animate-on-scroll">
+                        <div class="step-icon-wrap">
+                            <span class="step-icon-bg"><i class="ph ph-file-text"></i></span>
+                            <span class="step-number">01</span>
+                        </div>
+                        <h3 class="step-title">Descubrimiento</h3>
+                        <p class="step-desc">Analizamos tu negocio, tu mercado en Arequipa y definimos el alcance del proyecto con objetivos claros y medibles.</p>
+                    </div>
+
+                    <div class="process-step animate-on-scroll" style="animation-delay: 0.15s;">
+                        <div class="step-icon-wrap">
+                            <span class="step-icon-bg"><i class="ph ph-code-block"></i></span>
+                            <span class="step-number">02</span>
+                        </div>
+                        <h3 class="step-title">Desarrollo</h3>
+                        <p class="step-desc">Diseñamos y desarrollamos tu solución con las últimas tecnologías, siempre mostrándote el avance y recibiendo tu feedback.</p>
+                    </div>
+
+                    <div class="process-step animate-on-scroll" style="animation-delay: 0.3s;">
+                        <div class="step-icon-wrap">
+                            <span class="step-icon-bg"><i class="ph ph-airplane-takeoff"></i></span>
+                            <span class="step-number">03</span>
+                        </div>
+                        <h3 class="step-title">Lanzamiento</h3>
+                        <p class="step-desc">Lanzamos tu proyecto, te capacitamos para gestionarlo y te acompañamos con soporte continuo para que siempre funcione perfecto.</p>
+                    </div>
+                </div>
+
+                <div class="process-cta animate-on-scroll">
+                    <a href="#contacto" class="btn-primary btn-lg" id="process-cta">
+                        Empecemos a trabajar <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RESULTADOS / TESTIMONIOS ===== -->
+        <section class="testimonials-section bg-cuarto" id="resultados">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <p class="section-label">Resultados</p>
+                    <h2 class="section-title">Negocios de Arequipa que ya <span class="font-bold">digitalizamos</span></h2>
+                    <p class="section-subtitle">Empresas locales que confían en SL Strategic Systems para su crecimiento digital.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Testimonio 1 -->
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-top">
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                                <i class="ph-fill ph-star"></i>
+                            </div>
+                            <i class="ph ph-quotes testimonial-quote-icon"></i>
+                        </div>
+                        <div class="testimonial-badge">
+                            <span class="badge-dot"></span>
+                            <p>+40% más consultas por WhatsApp</p>
+                        </div>
+                        <p class="testimonial-text">
+                            "Antes teníamos una web anticuada que nadie visitaba. Con SL Strategic Systems creamos una landing profesional y en el primer mes recibimos el doble de consultas. Totalmente recomendado para negocios en Arequipa."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MV</div>
+                            <div>
+                                <p class="author-name">Manuel Villanueva</p>
+                                <p class="author-role">Gerente, Ferretería Villanueva – Cercado, Arequipa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 2 -->
+                    <div class="testimonial-card animate-on-scroll" style="animation-delay: 0.1s;">
+                        <div class="testimonial-top">
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                                <i class="ph-fill ph-star"></i>
+                            </div>
+                            <i class="ph ph-quotes testimonial-quote-icon"></i>
+                        </div>
+                        <div class="testimonial-badge">
+                            <span class="badge-dot"></span>
+                            <p>CRM: +S/.80K en ventas registradas</p>
+                        </div>
+                        <p class="testimonial-text">
+                            "El sistema CRM que nos hicieron cambió completamente cómo gestionamos a nuestros clientes. Antes perdíamos seguimiento; ahora cerramos ventas que antes se nos escapaban. Excelente equipo."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RQ</div>
+                            <div>
+                                <p class="author-name">Rosario Quispe</p>
+                                <p class="author-role">Directora, Academia de inglés Horizonte – Cayma, Arequipa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 3 -->
+                    <div class="testimonial-card animate-on-scroll" style="animation-delay: 0.2s;">
+                        <div class="testimonial-top">
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                                <i class="ph-fill ph-star"></i>
+                            </div>
+                            <i class="ph ph-quotes testimonial-quote-icon"></i>
+                        </div>
+                        <div class="testimonial-badge">
+                            <span class="badge-dot"></span>
+                            <p>Página web posicionada en Google</p>
+                        </div>
+                        <p class="testimonial-text">
+                            "Nos hicieron la asesoría de nuestra web y en 2 meses apareció en la primera página de Google para búsquedas en Arequipa. Ahora recibimos clientes de forma orgánica sin pagar publicidad extra."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">LC</div>
+                            <div>
+                                <p class="author-name">Luis Condori</p>
+                                <p class="author-role">Propietario, Transportes Condori SAC – Paucarpata, Arequipa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACTO ===== -->
+        <section class="contact-section" id="contacto">
+            <!-- Blobs animados de fondo -->
             <div class="water-blob blob-1"></div>
             <div class="water-blob blob-2"></div>
             <div class="water-blob blob-3"></div>
             <div class="water-blob blob-4"></div>
 
-            <!-- Gotas de agua animadas -->
+            <!-- Partículas decorativas -->
             <div class="water-drops-container">
-                <div class="drop"></div>
-                <div class="drop"></div>
-                <div class="drop"></div>
-                <div class="drop"></div>
-                <div class="drop"></div>
-                <div class="drop"></div>
-                <div class="drop"></div>
-                <div class="drop"></div>
-                <div class="drop"></div>
+                <div class="drop"></div><div class="drop"></div><div class="drop"></div>
+                <div class="drop"></div><div class="drop"></div><div class="drop"></div>
+                <div class="drop"></div><div class="drop"></div><div class="drop"></div>
                 <div class="drop"></div>
             </div>
 
-            <!-- Contenido principal -->
-            <div class="relative z-10 w-[85%] mx-auto flex items-center gap-16">
-
+            <div class="contact-inner animate-on-scroll">
                 <!-- Texto izquierdo -->
-                <div class="w-1/2 flex flex-col gap-6">
-                    <p
-                        style="color: rgba(125,211,252,0.9); font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:0.15em;">
-                        Empieza hoy</p>
-                    <h2 style="font-size:3rem; line-height:1.15; color:#e7e6e2; font-weight:700;">Tus proximos clientes
-                        <span style="color:#38bdf8;">estan a un click</span>
-                    </h2>
-                    <p style="color:rgba(231,230,226,0.6); font-size:1.05rem; line-height:1.7;">Conectate con nosotros
-                        para empezar a trabajar en tu proyecto y llevar tu negocio al siguiente nivel.</p>
+                <div class="contact-text">
+                    <p class="contact-label">Empieza hoy · Arequipa, Perú</p>
+                    <h2 class="contact-title">Tus próximos clientes <span class="contact-highlight">están a un clic</span></h2>
+                    <p class="contact-desc">Conéctate con nosotros para empezar a trabajar en tu proyecto y llevar tu negocio arequipeño al siguiente nivel digital.</p>
 
-                    <!-- Badges de confianza -->
-                    <div class="flex flex-col gap-3 mt-2">
-                        <div class="flex items-center gap-3">
-                            <span
-                                style="width:32px;height:32px;border-radius:50%;background:rgba(56,189,248,0.2);border:1px solid rgba(56,189,248,0.4);display:flex;align-items:center;justify-content:center;">
-                                <i class="ph ph-check" style="color:#38bdf8;"></i>
-                            </span>
-                            <span style="color:rgba(231,230,226,0.75);font-size:0.9rem;">Respuesta en menos de 24
-                                horas</span>
+                    <div class="contact-badges">
+                        <div class="contact-badge-item">
+                            <span class="badge-check-icon"><i class="ph ph-check"></i></span>
+                            <span>Respuesta en menos de 24 horas</span>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <span
-                                style="width:32px;height:32px;border-radius:50%;background:rgba(56,189,248,0.2);border:1px solid rgba(56,189,248,0.4);display:flex;align-items:center;justify-content:center;">
-                                <i class="ph ph-check" style="color:#38bdf8;"></i>
-                            </span>
-                            <span style="color:rgba(231,230,226,0.75);font-size:0.9rem;">Asesoria 100% gratuita y sin
-                                compromisos</span>
+                        <div class="contact-badge-item">
+                            <span class="badge-check-icon"><i class="ph ph-check"></i></span>
+                            <span>Asesoría 100% gratuita y sin compromisos</span>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <span
-                                style="width:32px;height:32px;border-radius:50%;background:rgba(56,189,248,0.2);border:1px solid rgba(56,189,248,0.4);display:flex;align-items:center;justify-content:center;">
-                                <i class="ph ph-check" style="color:#38bdf8;"></i>
-                            </span>
-                            <span style="color:rgba(231,230,226,0.75);font-size:0.9rem;">+50 empresas digitalizadas
-                                exitosamente</span>
+                        <div class="contact-badge-item">
+                            <span class="badge-check-icon"><i class="ph ph-check"></i></span>
+                            <span>+30 empresas de Arequipa ya digitalizadas</span>
+                        </div>
+                        <div class="contact-badge-item">
+                            <span class="badge-check-icon"><i class="ph ph-check"></i></span>
+                            <span>Atendemos en Arequipa y todo el Perú</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Formulario glass -->
-                <div class="w-1/2">
+                <div class="contact-form-wrap">
                     <div class="glass-form-card">
-                        <p
-                            style="color:#e7e6e2;font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1.5rem;">
-                            Agenda tu asesoria gratuita</p>
+                        <p class="form-title">Agenda tu asesoría gratuita</p>
 
-                        <form class="flex flex-col gap-4" id="form_whatsapp">
-                            <div class="grid grid-cols-2 gap-4">
-                                <div class="flex flex-col gap-1">
+                        <form class="contact-form" id="form_whatsapp" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
                                     <label for="name" class="glass-label">Nombre</label>
-                                    <input type="text" id="name" class="glass-input" placeholder="Tu nombre">
+                                    <input type="text" id="name" class="glass-input" placeholder="Tu nombre completo" autocomplete="name">
                                 </div>
-                                <div class="flex flex-col gap-1">
+                                <div class="form-group">
                                     <label for="email" class="glass-label">Email</label>
-                                    <input type="email" id="email" class="glass-input" placeholder="tu@email.com">
+                                    <input type="email" id="email" class="glass-input" placeholder="tu@email.com" autocomplete="email">
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-1">
+                            <div class="form-group">
                                 <label for="negocio" class="glass-label">Tu negocio</label>
-                                <input type="text" id="negocio" class="glass-input"
-                                    placeholder="Nombre o tipo de negocio">
+                                <input type="text" id="negocio" class="glass-input" placeholder="Nombre o tipo de negocio en Arequipa" autocomplete="organization">
                             </div>
-                            <div class="flex flex-col gap-1">
-                                <label for="tel" class="glass-label">Whatsapp</label>
-                                <input type="tel" id="tel" class="glass-input" placeholder="+51 958 779 487">
+                            <div class="form-group">
+                                <label for="servicio" class="glass-label">¿Qué servicio te interesa?</label>
+                                <select id="servicio" class="glass-input glass-select">
+                                    <option value="">Selecciona un servicio...</option>
+                                    <option value="Landing Page">Landing Page</option>
+                                    <option value="CRM a medida">CRM a medida</option>
+                                    <option value="Página Web Corporativa">Página Web Corporativa</option>
+                                    <option value="Asesoría Digital">Asesoría Digital</option>
+                                    <option value="No sé aún">No sé aún, necesito asesoría</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="glass-label">WhatsApp</label>
+                                <input type="tel" id="tel" class="glass-input" placeholder="+51 958 779 487" autocomplete="tel">
                             </div>
 
-                            <div class="flex justify-center mt-2">
-                                <button type="submit" class="glass-submit-btn" onclick="enviarWhatsapp()">
-                                    <i class="ph ph-paper-plane-tilt text-xl"></i> Agendar asesoria
+                            <div class="form-submit">
+                                <button type="button" class="glass-submit-btn" id="submit-whatsapp" onclick="enviarWhatsapp()">
+                                    <i class="ph ph-whatsapp-logo"></i> Enviar por WhatsApp
                                 </button>
                             </div>
                         </form>
@@ -664,16 +501,96 @@
                 </div>
             </div>
         </section>
-
-        <!-- llamado a la accion -->
-        <section>
-
-        </section>
-
     </main>
 
-    <footer>
-        <p>Copyright 2026. All rights reserved.</p>
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer" id="footer">
+        <div class="footer-main">
+            <div class="footer-inner">
+                <!-- Col 1: Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="./public/logo.png" alt="SL Strategic Systems" class="footer-logo-img">
+                        <span class="footer-logo-name">SL <span class="logo-accent">Strategic</span> Systems</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Tecnología estratégica para empresas que quieren crecer. Basados en Arequipa, Perú.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook" class="social-icon" id="footer-facebook">
+                            <i class="ph ph-facebook-logo"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-icon" id="footer-instagram">
+                            <i class="ph ph-instagram-logo"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-icon" id="footer-linkedin">
+                            <i class="ph ph-linkedin-logo"></i>
+                        </a>
+                        <a href="https://wa.me/51947373693" aria-label="WhatsApp" class="social-icon social-whatsapp" id="footer-whatsapp">
+                            <i class="ph ph-whatsapp-logo"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Servicios -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">Landing Pages</a></li>
+                        <li><a href="#servicios">CRM a medida</a></li>
+                        <li><a href="#servicios">Páginas Web Corporativas</a></li>
+                        <li><a href="#servicios">Asesorías Digitales</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Empresa -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
+                        <li><a href="#resultados">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#contacto">Asesoría gratuita</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contacto -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Contacto</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="ph ph-map-pin"></i>
+                            <span>Arequipa, Perú</span>
+                        </li>
+                        <li>
+                            <i class="ph ph-whatsapp-logo"></i>
+                            <a href="https://wa.me/51947373693">+51 947 373 693</a>
+                        </li>
+                        <li>
+                            <i class="ph ph-envelope"></i>
+                            <a href="mailto:contacto@slstrategic.pe">contacto@slstrategic.pe</a>
+                        </li>
+                        <li>
+                            <i class="ph ph-clock"></i>
+                            <span>Lun – Vie: 8am – 6pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <p class="footer-copyright">
+                    &copy; 2026 <strong>SL Strategic Systems</strong>. Todos los derechos reservados. Arequipa, Perú.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de privacidad</a>
+                    <span>·</span>
+                    <a href="#">Términos de uso</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="./js/script.js"></script>
