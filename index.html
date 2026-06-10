@@ -4,49 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SL Strategic Systems – Agencia de tecnología en Arequipa, Perú. Desarrollamos landing pages, páginas web, CRM a medida y asesorías digitales para que tu negocio escale.">
-    <meta name="keywords" content="páginas web Arequipa, landing page Peru, CRM personalizado, agencia digital Arequipa, desarrollo web Peru">
-    <meta name="author" content="SL Strategic Systems">
+    <meta name="description"
+        content="Sebastian – Desarrollador Full Stack especializado en soluciones web modernas, CRM a medida y sistemas digitales para empresas. Arequipa, Perú.">
+    <meta name="keywords"
+        content="desarrollador web Arequipa, full stack developer Peru, portafolio programador, sistemas web a medida, desarrollo software Arequipa">
+    <meta name="author" content="Sebastian">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
-    <title>SL Strategic Systems – Tecnología que Escala tu Negocio | Arequipa, Perú</title>
+    <title>Sebastian – Full Stack Developer | Arequipa, Perú</title>
 </head>
 
 <body>
-
-    <!--
-    colores de la pagina
-    principal: #042c53
-    secundario: #e7e6e2
-    tercero: #000000
-    cuarto: #faf9f7
-    -->
 
     <!-- ===== HEADER ===== -->
     <header id="header" class="site-header">
         <div class="header-inner">
             <div class="header-logo">
-                <img src="./public/logo.png" class="logo-img" alt="Logo SL Strategic Systems">
-                <span class="logo-text">SL <span class="logo-accent">Strategic</span></span>
+                <div class="logo-avatar">S</div>
+                <span class="logo-text">Sebas<span class="logo-accent">Dev</span></span>
             </div>
 
             <!-- Desktop Nav -->
             <nav class="desktop-nav" aria-label="Navegación principal">
                 <ul>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
-                    <li><a href="#resultados">Testimonios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
-                <a href="#contacto" class="btn-primary" id="header-cta">Asesoría gratuita</a>
+                <!-- <a href="#contacto" class="btn-primary" id="header-cta">Contrátame</a> -->
                 <!-- Hamburger -->
                 <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
                     <span></span><span></span><span></span>
@@ -57,38 +49,67 @@
         <!-- Mobile Nav -->
         <nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil">
             <ul>
+                <li><a href="#sobre-mi" class="mobile-link">Sobre mí</a></li>
+                <li><a href="#habilidades" class="mobile-link">Habilidades</a></li>
+                <li><a href="#proyectos" class="mobile-link">Proyectos</a></li>
                 <li><a href="#servicios" class="mobile-link">Servicios</a></li>
-                <li><a href="#como-trabajamos" class="mobile-link">Cómo trabajamos</a></li>
-                <li><a href="#resultados" class="mobile-link">Testimonios</a></li>
                 <li><a href="#contacto" class="mobile-link">Contacto</a></li>
-                <li><a href="#contacto" class="btn-primary mobile-cta">Asesoría gratuita</a></li>
+                <li><a href="#contacto" class="btn-primary mobile-cta">Contrátame</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- ===== HERO / BANNER ===== -->
+        <!-- ===== HERO ===== -->
         <section class="hero-section" id="inicio">
+
+            <!-- Fondo animado de partículas -->
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="hero-glow glow-1"></div>
+                <div class="hero-glow glow-2"></div>
+                <div class="hero-glow glow-3"></div>
+            </div>
+
             <div class="hero-content animate-on-scroll">
                 <div class="hero-badge">
                     <span class="badge-dot"></span>
-                    <p>Tecnología estratégica de alto rendimiento · Arequipa, Perú</p>
+                    <p>Disponible para proyectos · Arequipa, Perú</p>
                 </div>
 
                 <h1 class="hero-title">
-                    Transformamos negocios de Arequipa con tecnología que está hecha para <span class="text-highlight">escalar</span>
+                    Hola, soy <span class="text-gradient">Sebastian</span><br>
+                    Full Stack Developer
                 </h1>
                 <p class="hero-subtitle">
-                    Ayudamos a empresas arequipeñas a resolver problemas reales y mejorar su eficiencia mediante soluciones tecnológicas personalizadas: landing pages, páginas web, CRM y asesorías.
+                    Construyo sistemas web modernos, CRMs a medida y soluciones digitales que resuelven problemas reales
+                    para empresas que quieren crecer.
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#contacto" class="btn-primary btn-lg" id="hero-cta-main">
-                        Agendar reunión gratuita <i class="ph ph-arrow-right"></i>
+                    <a href="#proyectos" class="btn-primary btn-lg" id="hero-cta-projects">
+                        Ver mis proyectos <i class="ph ph-arrow-right"></i>
                     </a>
-                    <a href="#servicios" class="btn-ghost" id="hero-cta-services">
-                        Ver servicios <i class="ph ph-arrow-down"></i>
+                    <a href="#contacto" class="btn-ghost" id="hero-cta-contact">
+                        Trabajemos juntos <i class="ph ph-handshake"></i>
                     </a>
+                </div>
+
+                <!-- Code snippet decorativo -->
+                <div class="hero-code-card">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-filename">developer.js</span>
+                    </div>
+                    <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-string">"Sebastian"</span>,
+  <span class="c-prop">role</span>: <span class="c-string">"Full Stack Developer"</span>,
+  <span class="c-prop">location</span>: <span class="c-string">"Arequipa, Perú 🇵🇪"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-string">"React"</span>, <span class="c-string">"Node.js"</span>, <span class="c-string">"Python"</span>],
+  <span class="c-prop">openToWork</span>: <span class="c-keyword">true</span> <span class="c-comment">// ← ¡Disponible!</span>
+};</code></pre>
                 </div>
             </div>
 
@@ -96,202 +117,511 @@
             <div class="hero-stats animate-on-scroll" style="animation-delay: 0.2s;">
                 <div class="stat-card">
                     <p class="stat-number">+30</p>
-                    <span class="stat-label">Clientes en Arequipa</span>
-                </div>
-                <div class="stat-card">
-                    <p class="stat-number">+S/.150K</p>
-                    <span class="stat-label">Ventas generadas</span>
-                </div>
-                <div class="stat-card">
-                    <p class="stat-number">+95%</p>
-                    <span class="stat-label">Tasa de satisfacción</span>
+                    <span class="stat-label">Proyectos entregados</span>
                 </div>
                 <div class="stat-card">
                     <p class="stat-number">+2</p>
-                    <span class="stat-label">Años en el mercado</span>
+                    <span class="stat-label">Años de experiencia</span>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">100%</p>
+                    <span class="stat-label">Clientes satisfechos</span>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">+10</p>
+                    <span class="stat-label">Tecnologías dominadas</span>
                 </div>
             </div>
         </section>
 
-        <!-- ===== PROBLEMAS ===== -->
-        <section class="problems-section bg-cuarto" id="problemas">
+        <!-- ===== SOBRE MÍ ===== -->
+        <section class="about-section" id="sobre-mi">
             <div class="section-container">
-                <div class="section-header animate-on-scroll">
-                    <p class="section-label">Problemas reales</p>
-                    <h2 class="section-title">¿Te suenan algunos de estos problemas?</h2>
-                </div>
-
-                <div class="problems-grid">
-                    <div class="problem-card animate-on-scroll">
-                        <span class="problem-icon">
-                            <i class="ph ph-chart-line-down"></i>
-                        </span>
-                        <p class="problem-heading">Publicidad sin resultados reales</p>
-                        <p class="problem-desc">Gastas en anuncios que no convierten. Tu presupuesto se evapora y los clientes no llegan a tu negocio en Arequipa.</p>
+                <div class="about-inner">
+                    <div class="about-visual animate-on-scroll">
+                        <div class="about-avatar-wrap">
+                            <div class="about-avatar">
+                                <i class="ph ph-user"></i>
+                            </div>
+                            <div class="about-avatar-ring"></div>
+                            <!-- Badges flotantes -->
+                            <div class="float-badge badge-top-right">
+                                <i class="ph ph-code"></i> Dev
+                            </div>
+                            <div class="float-badge badge-bottom-left">
+                                <i class="ph ph-star-four"></i> +30 proyectos
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="problem-card animate-on-scroll" style="animation-delay: 0.1s;">
-                        <span class="problem-icon">
-                            <i class="ph ph-globe-x"></i>
-                        </span>
-                        <p class="problem-heading">Tu página web no genera ventas</p>
-                        <p class="problem-desc">Tienes una web desactualizada, lenta o que simplemente no comunica el valor de tu empresa a tus clientes potenciales.</p>
-                    </div>
-
-                    <div class="problem-card animate-on-scroll" style="animation-delay: 0.2s;">
-                        <span class="problem-icon">
-                            <i class="ph ph-users-three"></i>
-                        </span>
-                        <p class="problem-heading">Pierdes clientes por desorganización</p>
-                        <p class="problem-desc">No tienes un sistema para hacer seguimiento a tus leads. Los contactos se pierden en WhatsApp, hojas de cálculo o cuadernos.</p>
-                    </div>
-                </div>
-
-                <p class="problems-cta animate-on-scroll">
-                    Si te identificas con alguno de estos problemas, <span class="font-bold text-principal">SL Strategic Systems</span> es la solución que necesitas en Arequipa.
-                </p>
-            </div>
-        </section>
-
-        <!-- ===== SOLUCIONES ===== -->
-        <section class="solutions-section" id="soluciones">
-            <div class="section-container">
-                <div class="solutions-inner">
-                    <div class="solutions-text animate-on-scroll">
-                        <p class="section-label">La solución</p>
-                        <h2 class="section-title">Hacemos tecnología que resuelve tus problemas <span class="text-highlight">hoy</span> y crece contigo <span class="text-highlight">mañana</span></h2>
-                        <p class="solutions-desc">
-                            No creamos soluciones que duran poco tiempo. Diseñamos tecnologías adaptadas a tu negocio en Arequipa para que escalen contigo a medida que creces.
+                    <div class="about-text animate-on-scroll" style="animation-delay: 0.15s;">
+                        <p class="section-label">Sobre mí</p>
+                        <h2 class="section-title">Desarrollador apasionado por crear soluciones que <span
+                                class="text-gradient">impactan</span></h2>
+                        <p class="about-desc">
+                            Soy un desarrollador Full Stack basado en Arequipa, Perú, especializado en crear
+                            aplicaciones web de alto rendimiento, sistemas CRM personalizados y landing pages que
+                            convierten. Combino diseño moderno con código limpio para entregar productos que realmente
+                            funcionan.
                         </p>
-                        <a href="#contacto" class="btn-primary" id="solutions-cta">
-                            Agendar reunión gratuita <i class="ph ph-arrow-right"></i>
+                        <p class="about-desc">
+                            Trabajo de la mano con empresas para entender sus problemas y construir soluciones digitales
+                            a medida que les permitan crecer y escalar sin límites.
+                        </p>
+
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="ph ph-rocket-launch"></i>
+                                <span>Entregas rápidas y sin rodeos</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="ph ph-shield-check"></i>
+                                <span>Código limpio y escalable</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="ph ph-chats"></i>
+                                <span>Comunicación constante</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="ph ph-trend-up"></i>
+                                <span>Orientado a resultados</span>
+                            </div>
+                        </div>
+
+                        <a href="#contacto" class="btn-primary" id="about-cta">
+                            Hablemos de tu proyecto <i class="ph ph-arrow-right"></i>
                         </a>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="solutions-features animate-on-scroll" style="animation-delay: 0.15s;">
-                        <div class="feature-item">
-                            <span class="feature-icon"><i class="ph ph-chart-polar"></i></span>
-                            <div>
-                                <p class="feature-title">Estrategias basadas en datos</p>
-                                <p class="feature-desc">Analizamos tu mercado local en Arequipa, tu competencia y audiencia para diseñar una estrategia digital a medida.</p>
-                            </div>
+        <!-- ===== HABILIDADES ===== -->
+        <section class="skills-section" id="habilidades">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <p class="section-label">Stack tecnológico</p>
+                    <h2 class="section-title">Herramientas con las que <span class="text-gradient">construyo</span></h2>
+                    <p class="section-subtitle">Tecnologías modernas para crear productos digitales robustos y
+                        escalables.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-category animate-on-scroll">
+                        <div class="skill-cat-header">
+                            <span class="skill-cat-icon"><i class="ph ph-layout"></i></span>
+                            <h3 class="skill-cat-title">Frontend</h3>
                         </div>
-                        <div class="feature-item">
-                            <span class="feature-icon"><i class="ph ph-rocket-launch"></i></span>
-                            <div>
-                                <p class="feature-title">Resultados rápidos y medibles</p>
-                                <p class="feature-desc">Entregamos proyectos funcionales en plazos acordados con métricas claras de rendimiento y conversión.</p>
-                            </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Astro</span>
                         </div>
-                        <div class="feature-item">
-                            <span class="feature-icon"><i class="ph ph-headset"></i></span>
-                            <div>
-                                <p class="feature-title">Soporte continuo post-entrega</p>
-                                <p class="feature-desc">No te dejamos solo después del lanzamiento. Te acompañamos con soporte, mantenimiento y asesoría permanente.</p>
-                            </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category animate-on-scroll" style="animation-delay: 0.1s;">
+                        <div class="skill-cat-header">
+                            <span class="skill-cat-icon"><i class="ph ph-terminal-window"></i></span>
+                            <h3 class="skill-cat-title">Backend</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">REST APIs</span>
+                        </div>
+                    </div>
+
+                    <!-- Bases de datos -->
+                    <div class="skill-category animate-on-scroll" style="animation-delay: 0.2s;">
+                        <div class="skill-cat-header">
+                            <span class="skill-cat-icon"><i class="ph ph-database"></i></span>
+                            <h3 class="skill-cat-title">Bases de datos</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Supabase</span>
+                        </div>
+                    </div>
+
+                    <!-- Herramientas -->
+                    <div class="skill-category animate-on-scroll" style="animation-delay: 0.3s;">
+                        <div class="skill-cat-header">
+                            <span class="skill-cat-icon"><i class="ph ph-wrench"></i></span>
+                            <h3 class="skill-cat-title">Herramientas</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Vercel</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Postman</span>
+
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- ===== PROYECTOS ===== -->
+        <section class="projects-section" id="proyectos">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <p class="section-label">Portafolio</p>
+                    <h2 class="section-title">Proyectos que <span class="text-gradient">hablan por mí</span></h2>
+                    <p class="section-subtitle">Una selección de los proyectos más destacados que he desarrollado para
+                        empresas reales.</p>
+                </div>
+
+                <!-- Filtros -->
+                <div class="projects-filters animate-on-scroll">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="crm">CRM / Sistemas</button>
+                    <button class="filter-btn" data-filter="landing">Landing Pages</button>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+
+                    <!-- Proyecto 1 -->
+                    <article class="project-card animate-on-scroll" data-category="crm">
+                        <div class="project-img">
+                            <div class="project-img-placeholder" style="--proj-color: #6366f1;">
+                                <i class="ph ph-kanban"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" aria-label="Ver demo">
+                                        <i class="ph ph-eye"></i> Demo
+                                    </a>
+                                    <a href="#" class="project-link-btn" aria-label="Ver código">
+                                        <i class="ph ph-github-logo"></i> Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">CRM / Sistema</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h3 class="project-title">CRM de Ventas para PYME</h3>
+                            <p class="project-desc">Sistema completo de gestión de clientes y pipeline de ventas para
+                                una empresa comercial de Arequipa. Incluye dashboard con métricas en tiempo real,
+                                seguimiento de leads y reportes automáticos.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">React</span>
+                                <span class="stack-tag">Node.js</span>
+                                <span class="stack-tag">MySQL</span>
+                                <span class="stack-tag">Express</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="project-card animate-on-scroll" data-category="landing"
+                        style="animation-delay: 0.1s;">
+                        <div class="project-img">
+                            <div class="project-img-placeholder" style="--proj-color: #0ea5e9;">
+                                <i class="ph ph-browsers"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" aria-label="Ver demo">
+                                        <i class="ph ph-eye"></i> Demo
+                                    </a>
+                                    <a href="#" class="project-link-btn" aria-label="Ver código">
+                                        <i class="ph ph-github-logo"></i> Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">Landing Page</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h3 class="project-title">Landing de Alta Conversión</h3>
+                            <p class="project-desc">Landing page optimizada para captación de leads para una academia de
+                                idiomas. Diseño moderno con formulario integrado a WhatsApp y animaciones premium que
+                                aumentaron las consultas en +40%.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">HTML5</span>
+                                <span class="stack-tag">CSS3</span>
+                                <span class="stack-tag">JavaScript</span>
+                                <span class="stack-tag">SEO</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="project-card animate-on-scroll" data-category="web" style="animation-delay: 0.2s;">
+                        <div class="project-img">
+                            <div class="project-img-placeholder" style="--proj-color: #10b981;">
+                                <i class="ph ph-storefront"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" aria-label="Ver demo">
+                                        <i class="ph ph-eye"></i> Demo
+                                    </a>
+                                    <a href="#" class="project-link-btn" aria-label="Ver código">
+                                        <i class="ph ph-github-logo"></i> Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">Web App</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title">E-commerce para Negocio Local</h3>
+                            <p class="project-desc">Plataforma de comercio electrónico con catálogo de productos,
+                                carrito de compras, pasarela de pagos y panel de administración para gestionar
+                                inventario y pedidos fácilmente.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">Next.js</span>
+                                <span class="stack-tag">PostgreSQL</span>
+                                <span class="stack-tag">Stripe</span>
+                                <span class="stack-tag">Vercel</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 4 -->
+                    <article class="project-card animate-on-scroll" data-category="crm" style="animation-delay: 0.1s;">
+                        <div class="project-img">
+                            <div class="project-img-placeholder" style="--proj-color: #f59e0b;">
+                                <i class="ph ph-chart-bar"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" aria-label="Ver demo">
+                                        <i class="ph ph-eye"></i> Demo
+                                    </a>
+                                    <a href="#" class="project-link-btn" aria-label="Ver código">
+                                        <i class="ph ph-github-logo"></i> Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">CRM / Sistema</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title">Dashboard de Reportes Empresariales</h3>
+                            <p class="project-desc">Sistema de reportes y analítica de ventas para empresa de
+                                transportes. Visualizaciones interactivas, exportación a PDF/Excel y notificaciones
+                                automáticas para el equipo directivo.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">React</span>
+                                <span class="stack-tag">Python</span>
+                                <span class="stack-tag">FastAPI</span>
+                                <span class="stack-tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 5 -->
+                    <article class="project-card animate-on-scroll" data-category="web" style="animation-delay: 0.2s;">
+                        <div class="project-img">
+                            <div class="project-img-placeholder" style="--proj-color: #ec4899;">
+                                <i class="ph ph-calendar-check"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" aria-label="Ver demo">
+                                        <i class="ph ph-eye"></i> Demo
+                                    </a>
+                                    <a href="#" class="project-link-btn" aria-label="Ver código">
+                                        <i class="ph ph-github-logo"></i> Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">Web App</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h3 class="project-title">Sistema de Reservas Online</h3>
+                            <p class="project-desc">Plataforma de reservas y citas para una clínica estética. Gestión de
+                                turnos, recordatorios automáticos por WhatsApp, historial de clientes y integración con
+                                Google Calendar.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">React</span>
+                                <span class="stack-tag">Node.js</span>
+                                <span class="stack-tag">MongoDB</span>
+                                <span class="stack-tag">WhatsApp API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 6 -->
+                    <article class="project-card animate-on-scroll" data-category="landing"
+                        style="animation-delay: 0.3s;">
+                        <div class="project-img">
+                            <div class="project-img-placeholder" style="--proj-color: #8b5cf6;">
+                                <i class="ph ph-globe"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-btn" aria-label="Ver demo">
+                                        <i class="ph ph-eye"></i> Demo
+                                    </a>
+                                    <a href="#" class="project-link-btn" aria-label="Ver código">
+                                        <i class="ph ph-github-logo"></i> Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">Landing Page</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title">Web Corporativa con SEO Local</h3>
+                            <p class="project-desc">Página web corporativa para empresa de servicios con posicionamiento
+                                SEO local. Logró la primera página de Google para búsquedas clave en Arequipa en menos
+                                de 2 meses.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">HTML5</span>
+                                <span class="stack-tag">CSS3</span>
+                                <span class="stack-tag">SEO</span>
+                                <span class="stack-tag">Analytics</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- <div class="projects-more animate-on-scroll">
+                    <p class="projects-more-text">¿Quieres ver más proyectos o tienes uno en mente?</p>
+                    <a href="#contacto" class="btn-primary btn-lg" id="projects-cta">
+                        Hablemos <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div> -->
             </div>
         </section>
 
         <!-- ===== SERVICIOS ===== -->
-        <section class="services-section bg-cuarto" id="servicios">
+        <!-- <section class="services-section" id="servicios">
             <div class="section-container">
                 <div class="section-header animate-on-scroll">
-                    <p class="section-label">Servicios</p>
-                    <h2 class="section-title">Creamos tecnología a la medida para empresas reales de Arequipa</h2>
-                    <p class="section-subtitle">Desde sistemas de gestión interna hasta plataformas de atención al cliente — desarrollamos soluciones que se adaptan a tus necesidades específicas.</p>
+                    <p class="section-label">Lo que ofrezco</p>
+                    <h2 class="section-title">Servicios de desarrollo <span class="text-gradient">a medida</span></h2>
+                    <p class="section-subtitle">Soluciones digitales pensadas para resolver problemas reales y generar
+                        resultados tangibles para tu empresa.</p>
                 </div>
 
                 <div class="services-grid">
-                    <!-- Landing Page -->
+               
                     <div class="service-card animate-on-scroll" id="service-landing">
-                        <span class="service-icon"><i class="ph ph-browsers"></i></span>
+                        <span class="service-icon" style="--svc-color: #0ea5e9;"><i class="ph ph-browsers"></i></span>
                         <div class="service-card-header">
-                            <p class="service-name">Landing Page</p>
-                            <span class="service-tag">Páginas web</span>
+                            <p class="service-name">Landing Pages</p>
+                            <span class="service-tag">Diseño web</span>
                         </div>
-                        <p class="service-tagline">Diseñada para vender</p>
-                        <p class="service-desc">Diseñamos landing pages optimizadas para convertir visitantes en clientes. En pocos días tendrás una página lista para capturar leads y aumentar tus ventas en Arequipa.</p>
+                        <p class="service-tagline">Páginas que convierten visitantes en clientes</p>
+                        <p class="service-desc">Landing pages rápidas, modernas y optimizadas para SEO. Diseñadas con un
+                            objetivo claro: que el usuario tome acción y se contacte contigo.</p>
                         <ul class="service-features">
-                            <li><i class="ph ph-check-circle"></i> Diseño moderno y profesional</li>
-                            <li><i class="ph ph-check-circle"></i> Optimizada para Google (SEO)</li>
-                            <li><i class="ph ph-check-circle"></i> Integración con WhatsApp</li>
+                            <li><i class="ph ph-check-circle"></i> Diseño premium y responsive</li>
+                            <li><i class="ph ph-check-circle"></i> Optimización SEO local</li>
+                            <li><i class="ph ph-check-circle"></i> Integración con WhatsApp / formularios</li>
                         </ul>
-                        <a href="#contacto" class="service-link">Quiero este servicio <i class="ph ph-arrow-right"></i></a>
+                        <a href="#contacto" class="service-link">Solicitar cotización <i
+                                class="ph ph-arrow-right"></i></a>
                     </div>
 
-                    <!-- CRM -->
+                    
                     <div class="service-card animate-on-scroll" id="service-crm" style="animation-delay: 0.1s;">
-                        <span class="service-icon"><i class="ph ph-kanban"></i></span>
+                        <span class="service-icon" style="--svc-color: #6366f1;"><i class="ph ph-kanban"></i></span>
                         <div class="service-card-header">
                             <p class="service-name">CRM a medida</p>
                             <span class="service-tag">Sistemas</span>
                         </div>
-                        <p class="service-tagline">Organiza y cierra más ventas</p>
-                        <p class="service-desc">Sistema CRM personalizado para gestionar tus clientes, hacer seguimiento de oportunidades y nunca perder un lead. Ideal para negocios locales en Arequipa.</p>
+                        <p class="service-tagline">Organiza tu empresa y cierra más ventas</p>
+                        <p class="service-desc">Sistemas de gestión personalizados para tu flujo de trabajo. Olvídate de
+                            las hojas de cálculo y empieza a gestionar tus clientes de forma profesional.</p>
                         <ul class="service-features">
                             <li><i class="ph ph-check-circle"></i> Panel de control intuitivo</li>
-                            <li><i class="ph ph-check-circle"></i> Seguimiento de leads y ventas</li>
-                            <li><i class="ph ph-check-circle"></i> Reportes y estadísticas</li>
+                            <li><i class="ph ph-check-circle"></i> Reportes y estadísticas en tiempo real</li>
+                            <li><i class="ph ph-check-circle"></i> 100% adaptado a tu negocio</li>
                         </ul>
-                        <a href="#contacto" class="service-link">Quiero este servicio <i class="ph ph-arrow-right"></i></a>
+                        <a href="#contacto" class="service-link">Solicitar cotización <i
+                                class="ph ph-arrow-right"></i></a>
                     </div>
 
-                    <!-- Página Web Corporativa -->
-                    <div class="service-card animate-on-scroll" id="service-web" style="animation-delay: 0.2s;">
-                        <span class="service-icon"><i class="ph ph-globe"></i></span>
+                    
+                    <div class="service-card animate-on-scroll" id="service-webapp" style="animation-delay: 0.2s;">
+                        <span class="service-icon" style="--svc-color: #10b981;"><i class="ph ph-app-window"></i></span>
                         <div class="service-card-header">
-                            <p class="service-name">Página Web Corporativa</p>
-                            <span class="service-tag">Páginas web</span>
+                            <p class="service-name">Aplicaciones Web</p>
+                            <span class="service-tag">Full Stack</span>
                         </div>
-                        <p class="service-tagline">Tu empresa en internet 24/7</p>
-                        <p class="service-desc">Web corporativa completa con secciones de servicios, portafolio, blog y contacto. Posiciona tu empresa en Arequipa en los primeros resultados de Google.</p>
+                        <p class="service-tagline">Del diseño al servidor, todo bajo control</p>
+                        <p class="service-desc">Desarrollo completo de aplicaciones web: desde el diseño UI hasta el
+                            backend y la base de datos. Soluciones robustas que escalan con tu negocio.</p>
                         <ul class="service-features">
-                            <li><i class="ph ph-check-circle"></i> Diseño responsive (móvil + desktop)</li>
-                            <li><i class="ph ph-check-circle"></i> Posicionamiento SEO local</li>
-                            <li><i class="ph ph-check-circle"></i> Panel de administración</li>
+                            <li><i class="ph ph-check-circle"></i> Arquitectura escalable</li>
+                            <li><i class="ph ph-check-circle"></i> APIs REST y autenticación segura</li>
+                            <li><i class="ph ph-check-circle"></i> Despliegue y mantenimiento</li>
                         </ul>
-                        <a href="#contacto" class="service-link">Quiero este servicio <i class="ph ph-arrow-right"></i></a>
+                        <a href="#contacto" class="service-link">Solicitar cotización <i
+                                class="ph ph-arrow-right"></i></a>
                     </div>
 
-                    <!-- Asesorías -->
-                    <div class="service-card animate-on-scroll" id="service-asesoria" style="animation-delay: 0.1s;">
-                        <span class="service-icon"><i class="ph ph-chalkboard-teacher"></i></span>
+                    
+                    <div class="service-card animate-on-scroll" id="service-asesoria" style="animation-delay: 0.3s;">
+                        <span class="service-icon" style="--svc-color: #f59e0b;"><i
+                                class="ph ph-chalkboard-teacher"></i></span>
                         <div class="service-card-header">
-                            <p class="service-name">Asesoría Digital</p>
-                            <span class="service-tag">Consultoría</span>
+                            <p class="service-name">Consultoría Tech</p>
+                            <span class="service-tag">Estrategia</span>
                         </div>
-                        <p class="service-tagline">Mejora tu presencia online</p>
-                        <p class="service-desc">Analizamos tu situación digital actual y te entregamos un plan de acción claro: qué cambiar, qué optimizar y cómo atraer más clientes desde internet.</p>
+                        <p class="service-tagline">La tecnología correcta para tu negocio</p>
+                        <p class="service-desc">Te ayudo a tomar las mejores decisiones tecnológicas para tu empresa:
+                            qué sistema usar, cómo digitalizar tus procesos y por dónde empezar.</p>
                         <ul class="service-features">
-                            <li><i class="ph ph-check-circle"></i> Auditoría de tu web actual</li>
-                            <li><i class="ph ph-check-circle"></i> Plan de mejoras priorizado</li>
-                            <li><i class="ph ph-check-circle"></i> Seguimiento mensual</li>
+                            <li><i class="ph ph-check-circle"></i> Análisis de necesidades</li>
+                            <li><i class="ph ph-check-circle"></i> Roadmap tecnológico</li>
+                            <li><i class="ph ph-check-circle"></i> Acompañamiento continuo</li>
                         </ul>
-                        <a href="#contacto" class="service-link">Quiero este servicio <i class="ph ph-arrow-right"></i></a>
+                        <a href="#contacto" class="service-link">Solicitar asesoría <i
+                                class="ph ph-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <!-- ===== CÓMO TRABAJAMOS ===== -->
-        <section class="process-section" id="como-trabajamos">
+        <!-- ===== PROCESO ===== -->
+        <!-- <section class="process-section" id="como-trabajo">
             <div class="section-container">
                 <div class="section-header animate-on-scroll">
-                    <p class="section-label">Cómo trabajamos</p>
-                    <h2 class="section-title"><span class="font-bold">3 pasos</span> para llevar tu negocio al siguiente nivel</h2>
+                    <p class="section-label">Cómo trabajo</p>
+                    <h2 class="section-title"><span class="text-gradient">3 pasos</span> del proyecto a la entrega</h2>
                 </div>
 
                 <div class="process-grid">
                     <div class="process-step animate-on-scroll">
                         <div class="step-icon-wrap">
-                            <span class="step-icon-bg"><i class="ph ph-file-text"></i></span>
+                            <span class="step-icon-bg"><i class="ph ph-magnifying-glass"></i></span>
                             <span class="step-number">01</span>
                         </div>
                         <h3 class="step-title">Descubrimiento</h3>
-                        <p class="step-desc">Analizamos tu negocio, tu mercado en Arequipa y definimos el alcance del proyecto con objetivos claros y medibles.</p>
+                        <p class="step-desc">Entiendo a fondo tu negocio, tus objetivos y los problemas que quieres resolver. Definimos juntos el alcance y los entregables del proyecto.</p>
                     </div>
 
                     <div class="process-step animate-on-scroll" style="animation-delay: 0.15s;">
@@ -300,140 +630,57 @@
                             <span class="step-number">02</span>
                         </div>
                         <h3 class="step-title">Desarrollo</h3>
-                        <p class="step-desc">Diseñamos y desarrollamos tu solución con las últimas tecnologías, siempre mostrándote el avance y recibiendo tu feedback.</p>
+                        <p class="step-desc">Diseño y construyo la solución con las tecnologías más adecuadas para tu caso. Recibes avances constantes para dar feedback en cada etapa.</p>
                     </div>
 
                     <div class="process-step animate-on-scroll" style="animation-delay: 0.3s;">
                         <div class="step-icon-wrap">
-                            <span class="step-icon-bg"><i class="ph ph-airplane-takeoff"></i></span>
+                            <span class="step-icon-bg"><i class="ph ph-rocket-launch"></i></span>
                             <span class="step-number">03</span>
                         </div>
-                        <h3 class="step-title">Lanzamiento</h3>
-                        <p class="step-desc">Lanzamos tu proyecto, te capacitamos para gestionarlo y te acompañamos con soporte continuo para que siempre funcione perfecto.</p>
+                        <h3 class="step-title">Entrega y soporte</h3>
+                        <p class="step-desc">Lanzo tu proyecto, te capacito para usarlo y te acompaño con soporte post-entrega para que todo funcione perfecto desde el primer día.</p>
                     </div>
                 </div>
 
                 <div class="process-cta animate-on-scroll">
                     <a href="#contacto" class="btn-primary btn-lg" id="process-cta">
-                        Empecemos a trabajar <i class="ph ph-arrow-right"></i>
+                        Empecemos <i class="ph ph-arrow-right"></i>
                     </a>
                 </div>
             </div>
-        </section>
-
-        <!-- ===== RESULTADOS / TESTIMONIOS ===== -->
-        <section class="testimonials-section bg-cuarto" id="resultados">
-            <div class="section-container">
-                <div class="section-header animate-on-scroll">
-                    <p class="section-label">Resultados</p>
-                    <h2 class="section-title">Negocios de Arequipa que ya <span class="font-bold">digitalizamos</span></h2>
-                    <p class="section-subtitle">Empresas locales que confían en SL Strategic Systems para su crecimiento digital.</p>
-                </div>
-
-                <div class="testimonials-grid">
-                    <!-- Testimonio 1 -->
-                    <div class="testimonial-card animate-on-scroll">
-                        <div class="testimonial-top">
-                            <div class="stars">
-                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-                                <i class="ph-fill ph-star"></i>
-                            </div>
-                            <i class="ph ph-quotes testimonial-quote-icon"></i>
-                        </div>
-                        <div class="testimonial-badge">
-                            <span class="badge-dot"></span>
-                            <p>+40% más consultas por WhatsApp</p>
-                        </div>
-                        <p class="testimonial-text">
-                            "Antes teníamos una web anticuada que nadie visitaba. Con SL Strategic Systems creamos una landing profesional y en el primer mes recibimos el doble de consultas. Totalmente recomendado para negocios en Arequipa."
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">MV</div>
-                            <div>
-                                <p class="author-name">Manuel Villanueva</p>
-                                <p class="author-role">Gerente, Ferretería Villanueva – Cercado, Arequipa</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonio 2 -->
-                    <div class="testimonial-card animate-on-scroll" style="animation-delay: 0.1s;">
-                        <div class="testimonial-top">
-                            <div class="stars">
-                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-                                <i class="ph-fill ph-star"></i>
-                            </div>
-                            <i class="ph ph-quotes testimonial-quote-icon"></i>
-                        </div>
-                        <div class="testimonial-badge">
-                            <span class="badge-dot"></span>
-                            <p>CRM: +S/.80K en ventas registradas</p>
-                        </div>
-                        <p class="testimonial-text">
-                            "El sistema CRM que nos hicieron cambió completamente cómo gestionamos a nuestros clientes. Antes perdíamos seguimiento; ahora cerramos ventas que antes se nos escapaban. Excelente equipo."
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">RQ</div>
-                            <div>
-                                <p class="author-name">Rosario Quispe</p>
-                                <p class="author-role">Directora, Academia de inglés Horizonte – Cayma, Arequipa</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonio 3 -->
-                    <div class="testimonial-card animate-on-scroll" style="animation-delay: 0.2s;">
-                        <div class="testimonial-top">
-                            <div class="stars">
-                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-                                <i class="ph-fill ph-star"></i>
-                            </div>
-                            <i class="ph ph-quotes testimonial-quote-icon"></i>
-                        </div>
-                        <div class="testimonial-badge">
-                            <span class="badge-dot"></span>
-                            <p>Página web posicionada en Google</p>
-                        </div>
-                        <p class="testimonial-text">
-                            "Nos hicieron la asesoría de nuestra web y en 2 meses apareció en la primera página de Google para búsquedas en Arequipa. Ahora recibimos clientes de forma orgánica sin pagar publicidad extra."
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">LC</div>
-                            <div>
-                                <p class="author-name">Luis Condori</p>
-                                <p class="author-role">Propietario, Transportes Condori SAC – Paucarpata, Arequipa</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section> -->
 
         <!-- ===== CONTACTO ===== -->
-        <section class="contact-section" id="contacto">
-            <!-- Blobs animados de fondo -->
+        <!-- <section class="contact-section" id="contacto">
+            
             <div class="water-blob blob-1"></div>
             <div class="water-blob blob-2"></div>
             <div class="water-blob blob-3"></div>
             <div class="water-blob blob-4"></div>
 
-            <!-- Partículas decorativas -->
+           
             <div class="water-drops-container">
-                <div class="drop"></div><div class="drop"></div><div class="drop"></div>
-                <div class="drop"></div><div class="drop"></div><div class="drop"></div>
-                <div class="drop"></div><div class="drop"></div><div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
                 <div class="drop"></div>
             </div>
 
             <div class="contact-inner animate-on-scroll">
-                <!-- Texto izquierdo -->
+                
                 <div class="contact-text">
-                    <p class="contact-label">Empieza hoy · Arequipa, Perú</p>
-                    <h2 class="contact-title">Tus próximos clientes <span class="contact-highlight">están a un clic</span></h2>
-                    <p class="contact-desc">Conéctate con nosotros para empezar a trabajar en tu proyecto y llevar tu negocio arequipeño al siguiente nivel digital.</p>
+                    <p class="contact-label">Trabajemos juntos</p>
+                    <h2 class="contact-title">¿Tienes un proyecto en mente? <span
+                            class="contact-highlight">Hablemos</span></h2>
+                    <p class="contact-desc">Cuéntame sobre tu idea o problema y en menos de 24 horas te respondo con una
+                        propuesta clara y sin compromiso.</p>
 
                     <div class="contact-badges">
                         <div class="contact-badge-item">
@@ -442,57 +689,72 @@
                         </div>
                         <div class="contact-badge-item">
                             <span class="badge-check-icon"><i class="ph ph-check"></i></span>
-                            <span>Asesoría 100% gratuita y sin compromisos</span>
+                            <span>Primera consulta 100% gratuita</span>
                         </div>
                         <div class="contact-badge-item">
                             <span class="badge-check-icon"><i class="ph ph-check"></i></span>
-                            <span>+30 empresas de Arequipa ya digitalizadas</span>
+                            <span>Propuesta personalizada para tu caso</span>
                         </div>
                         <div class="contact-badge-item">
                             <span class="badge-check-icon"><i class="ph ph-check"></i></span>
-                            <span>Atendemos en Arequipa y todo el Perú</span>
+                            <span>Trabajo con clientes en todo el Perú</span>
                         </div>
+                    </div>
+
+                   
+                    <div class="contact-socials">
+                        <a href="#" class="social-btn" id="contact-github" aria-label="GitHub">
+                            <i class="ph ph-github-logo"></i> GitHub
+                        </a>
+                        <a href="#" class="social-btn" id="contact-linkedin" aria-label="LinkedIn">
+                            <i class="ph ph-linkedin-logo"></i> LinkedIn
+                        </a>
                     </div>
                 </div>
 
-                <!-- Formulario glass -->
+             
                 <div class="contact-form-wrap">
                     <div class="glass-form-card">
-                        <p class="form-title">Agenda tu asesoría gratuita</p>
+                        <p class="form-title">Cuéntame sobre tu proyecto</p>
 
                         <form class="contact-form" id="form_whatsapp" novalidate>
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="name" class="glass-label">Nombre</label>
-                                    <input type="text" id="name" class="glass-input" placeholder="Tu nombre completo" autocomplete="name">
+                                    <input type="text" id="name" class="glass-input" placeholder="Tu nombre completo"
+                                        autocomplete="name">
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="glass-label">Email</label>
-                                    <input type="email" id="email" class="glass-input" placeholder="tu@email.com" autocomplete="email">
+                                    <input type="email" id="email" class="glass-input" placeholder="tu@email.com"
+                                        autocomplete="email">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="negocio" class="glass-label">Tu negocio</label>
-                                <input type="text" id="negocio" class="glass-input" placeholder="Nombre o tipo de negocio en Arequipa" autocomplete="organization">
+                                <label for="empresa" class="glass-label">Empresa / Negocio</label>
+                                <input type="text" id="empresa" class="glass-input"
+                                    placeholder="Nombre de tu empresa (opcional)" autocomplete="organization">
                             </div>
                             <div class="form-group">
-                                <label for="servicio" class="glass-label">¿Qué servicio te interesa?</label>
+                                <label for="servicio" class="glass-label">¿Qué necesitas?</label>
                                 <select id="servicio" class="glass-input glass-select">
                                     <option value="">Selecciona un servicio...</option>
                                     <option value="Landing Page">Landing Page</option>
                                     <option value="CRM a medida">CRM a medida</option>
-                                    <option value="Página Web Corporativa">Página Web Corporativa</option>
-                                    <option value="Asesoría Digital">Asesoría Digital</option>
-                                    <option value="No sé aún">No sé aún, necesito asesoría</option>
+                                    <option value="Aplicación Web">Aplicación Web Full Stack</option>
+                                    <option value="Consultoría Tech">Consultoría Tech</option>
+                                    <option value="Otro">Otro / No lo sé aún</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="tel" class="glass-label">WhatsApp</label>
-                                <input type="tel" id="tel" class="glass-input" placeholder="+51 958 779 487" autocomplete="tel">
+                                <input type="tel" id="tel" class="glass-input" placeholder="+51 958 779 487"
+                                    autocomplete="tel">
                             </div>
 
                             <div class="form-submit">
-                                <button type="button" class="glass-submit-btn" id="submit-whatsapp" onclick="enviarWhatsapp()">
+                                <button type="button" class="glass-submit-btn" id="submit-whatsapp"
+                                    onclick="enviarWhatsapp()">
                                     <i class="ph ph-whatsapp-logo"></i> Enviar por WhatsApp
                                 </button>
                             </div>
@@ -500,7 +762,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- ===== FOOTER ===== -->
@@ -510,49 +772,53 @@
                 <!-- Col 1: Brand -->
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <img src="./public/logo.png" alt="SL Strategic Systems" class="footer-logo-img">
-                        <span class="footer-logo-name">SL <span class="logo-accent">Strategic</span> Systems</span>
+                        <div class="footer-logo-avatar">S</div>
+                        <span class="footer-logo-name">Sebas<span class="logo-accent">Dev</span></span>
                     </div>
                     <p class="footer-tagline">
-                        Tecnología estratégica para empresas que quieren crecer. Basados en Arequipa, Perú.
+                        Full Stack Developer · Construyendo soluciones digitales que hacen crecer negocios. Basado en
+                        Arequipa, Perú.
                     </p>
                     <div class="footer-social">
-                        <a href="#" aria-label="Facebook" class="social-icon" id="footer-facebook">
-                            <i class="ph ph-facebook-logo"></i>
+                        <a href="https://github.com/Andry-code-web" aria-label="GitHub" target="_blank"
+                            class="social-icon" id="footer-github">
+                            <i class="ph ph-github-logo"></i>
                         </a>
+                        <a href="https://www.linkedin.com/in/sebastian-andry-escalante-mendoza-data/"
+                            aria-label="LinkedIn" target="_blank" class="social-icon" id="footer-linkedin">
+                            <i class="ph ph-linkedin-logo"></i>
+                        </a><!-- 
                         <a href="#" aria-label="Instagram" class="social-icon" id="footer-instagram">
                             <i class="ph ph-instagram-logo"></i>
-                        </a>
-                        <a href="#" aria-label="LinkedIn" class="social-icon" id="footer-linkedin">
-                            <i class="ph ph-linkedin-logo"></i>
-                        </a>
-                        <a href="https://wa.me/51947373693" aria-label="WhatsApp" class="social-icon social-whatsapp" id="footer-whatsapp">
+                        </a> -->
+                        <a href="https://wa.me/51947373693" aria-label="WhatsApp" class="social-icon social-whatsapp"
+                            id="footer-whatsapp">
                             <i class="ph ph-whatsapp-logo"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Col 2: Servicios -->
+                <!-- Col 2: Proyectos -->
                 <div class="footer-col">
+                    <h4 class="footer-col-title">Proyectos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#proyectos">CRM de Ventas</a></li>
+                        <li><a href="#proyectos">Landing Pages</a></li>
+                        <li><a href="#proyectos">Aplicaciones Web</a></li>
+                        <li><a href="#proyectos">Dashboard de Reportes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Servicios -->
+                <!-- <div class="footer-col">
                     <h4 class="footer-col-title">Servicios</h4>
                     <ul class="footer-links">
                         <li><a href="#servicios">Landing Pages</a></li>
                         <li><a href="#servicios">CRM a medida</a></li>
-                        <li><a href="#servicios">Páginas Web Corporativas</a></li>
-                        <li><a href="#servicios">Asesorías Digitales</a></li>
+                        <li><a href="#servicios">Aplicaciones Web</a></li>
+                        <li><a href="#servicios">Consultoría Tech</a></li>
                     </ul>
-                </div>
-
-                <!-- Col 3: Empresa -->
-                <div class="footer-col">
-                    <h4 class="footer-col-title">Empresa</h4>
-                    <ul class="footer-links">
-                        <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
-                        <li><a href="#resultados">Testimonios</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                        <li><a href="#contacto">Asesoría gratuita</a></li>
-                    </ul>
-                </div>
+                </div> -->
 
                 <!-- Col 4: Contacto -->
                 <div class="footer-col">
@@ -566,10 +832,10 @@
                             <i class="ph ph-whatsapp-logo"></i>
                             <a href="https://wa.me/51947373693">+51 947 373 693</a>
                         </li>
-                        <li>
+                        <!--  <li>
                             <i class="ph ph-envelope"></i>
-                            <a href="mailto:contacto@slstrategic.pe">contacto@slstrategic.pe</a>
-                        </li>
+                            <a href="mailto:contacto@sebas.dev">contacto@sebas.dev</a>
+                        </li> -->
                         <li>
                             <i class="ph ph-clock"></i>
                             <span>Lun – Vie: 8am – 6pm</span>
@@ -582,7 +848,7 @@
         <div class="footer-bottom">
             <div class="footer-bottom-inner">
                 <p class="footer-copyright">
-                    &copy; 2026 <strong>SL Strategic Systems</strong>. Todos los derechos reservados. Arequipa, Perú.
+                    &copy; 2026 <strong>Sebastian</strong> – Full Stack Developer. Arequipa, Perú.
                 </p>
                 <div class="footer-bottom-links">
                     <a href="#">Política de privacidad</a>

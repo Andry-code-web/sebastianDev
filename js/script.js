@@ -1,5 +1,5 @@
 /* =========================================================
-   SL Strategic Systems – script.js
+   Sebastian Dev – Portfolio script.js
    ========================================================= */
 
 /* ----------------------------------------------------------
@@ -20,13 +20,12 @@ hamburgerBtn.addEventListener('click', () => {
     toggleMenu(!isOpen);
 });
 
-// Cerrar menú al hacer click en un enlace
 mobileLinks.forEach(link => {
     link.addEventListener('click', () => toggleMenu(false));
 });
 
 /* ----------------------------------------------------------
-   2. HEADER SCROLL (sombra al hacer scroll)
+   2. HEADER SCROLL
    ---------------------------------------------------------- */
 const siteHeader = document.getElementById('header');
 
@@ -43,19 +42,18 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            // Una vez visible, deja de observar (mejora rendimiento)
             observer.unobserve(entry.target);
         }
     });
 }, {
-    threshold: 0.12,
+    threshold: 0.1,
     rootMargin: '0px 0px -40px 0px'
 });
 
 animatedEls.forEach(el => observer.observe(el));
 
 /* ----------------------------------------------------------
-   4. SMOOTH SCROLL para anclas internas
+   4. SMOOTH SCROLL
    ---------------------------------------------------------- */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -71,34 +69,69 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 /* ----------------------------------------------------------
-   5. ENVIAR POR WHATSAPP (formulario de contacto)
+   5. PROJECTS FILTER
+   ---------------------------------------------------------- */
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Actualizar botón activo
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        projectCards.forEach((card, i) => {
+            const category = card.dataset.category;
+            const match = filter === 'all' || category === filter;
+
+            if (match) {
+                card.classList.remove('hidden');
+                // Re-animar al aparecer
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, i * 60);
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    });
+});
+
+/* ----------------------------------------------------------
+   6. ENVIAR POR WHATSAPP (formulario de contacto)
    ---------------------------------------------------------- */
 function enviarWhatsapp() {
     const celular = "51947373693";
 
-    const nombre    = document.getElementById("name").value.trim();
-    const correo    = document.getElementById("email").value.trim();
-    const negocio   = document.getElementById("negocio").value.trim();
-    const servicio  = document.getElementById("servicio").value;
-    const telefono  = document.getElementById("tel").value.trim();
+    const nombre   = document.getElementById("name").value.trim();
+    const correo   = document.getElementById("email").value.trim();
+    const empresa  = document.getElementById("empresa").value.trim();
+    const servicio = document.getElementById("servicio").value;
+    const telefono = document.getElementById("tel").value.trim();
 
     /* Validación */
     if (!nombre || !correo || !telefono) {
-        showFormError("Por favor, completa al menos tu nombre, correo y WhatsApp.");
+        showToast("Por favor, completa tu nombre, correo y WhatsApp.", 'error');
         return;
     }
 
     /* Armar mensaje */
     const mensaje =
-`¡Hola SL Strategic Systems! 👋
+`¡Hola Sebastian! 👋 Vi tu portafolio y me interesa trabajar contigo.
 
-Mi nombre es: *${nombre}*
-Mi correo es: ${correo}
-Mi negocio: ${negocio || "No especificado"}
-Servicio de interés: *${servicio || "No especificado"}*
-Mi WhatsApp: ${telefono}
+👤 Nombre: *${nombre}*
+📧 Email: ${correo}
+🏢 Empresa: ${empresa || "No especificada"}
+🔧 Servicio: *${servicio || "No especificado"}*
+📱 WhatsApp: ${telefono}
 
-Me gustaría agendar una asesoría gratuita. ¡Quedo a la espera!`;
+Me gustaría hablar sobre mi proyecto. ¡Quedo a la espera!`;
 
     const urlCodificada = encodeURIComponent(mensaje);
     const urlWhatsapp   = `https://wa.me/${celular}?text=${urlCodificada}`;
@@ -106,49 +139,49 @@ Me gustaría agendar una asesoría gratuita. ¡Quedo a la espera!`;
     window.open(urlWhatsapp, "_blank");
 
     /* Limpiar formulario */
-    ["name", "email", "negocio", "tel"].forEach(id => {
+    ["name", "email", "empresa", "tel"].forEach(id => {
         document.getElementById(id).value = "";
     });
     document.getElementById("servicio").selectedIndex = 0;
 
-    showFormSuccess("¡Mensaje preparado! Se abrirá WhatsApp para enviarlo 🚀");
+    showToast("¡Mensaje listo! Abriendo WhatsApp 🚀", 'success');
 }
 
 /* ----------------------------------------------------------
-   6. HELPERS: mensajes de validación del form
+   7. TOAST NOTIFICATIONS
    ---------------------------------------------------------- */
-function showFormError(msg) {
-    showToast(msg, 'error');
-}
-
-function showFormSuccess(msg) {
-    showToast(msg, 'success');
-}
-
 function showToast(msg, type = 'success') {
-    const existing = document.getElementById('sl-toast');
+    const existing = document.getElementById('dev-toast');
     if (existing) existing.remove();
 
     const toast = document.createElement('div');
-    toast.id = 'sl-toast';
+    toast.id = 'dev-toast';
     toast.textContent = msg;
+
+    const isSuccess = type === 'success';
+
     Object.assign(toast.style, {
-        position:      'fixed',
-        bottom:        '28px',
-        left:          '50%',
-        transform:     'translateX(-50%) translateY(20px)',
-        background:    type === 'success' ? '#042c53' : '#b91c1c',
-        color:         '#fff',
-        padding:       '14px 28px',
-        borderRadius:  '12px',
-        boxShadow:     '0 8px 32px rgba(0,0,0,0.25)',
-        fontSize:      '0.92rem',
-        fontWeight:    '600',
-        zIndex:        '9999',
-        opacity:       '0',
-        transition:    'all 0.35s ease',
-        maxWidth:      '90vw',
-        textAlign:     'center',
+        position:     'fixed',
+        bottom:       '28px',
+        left:         '50%',
+        transform:    'translateX(-50%) translateY(20px)',
+        background:   isSuccess
+            ? 'linear-gradient(135deg, #6366f1, #4f46e5)'
+            : 'linear-gradient(135deg, #ef4444, #dc2626)',
+        color:        '#fff',
+        padding:      '14px 28px',
+        borderRadius: '12px',
+        boxShadow:    isSuccess
+            ? '0 8px 32px rgba(99,102,241,0.4)'
+            : '0 8px 32px rgba(239,68,68,0.4)',
+        fontSize:     '0.92rem',
+        fontWeight:   '600',
+        zIndex:       '9999',
+        opacity:      '0',
+        transition:   'all 0.35s ease',
+        maxWidth:     '90vw',
+        textAlign:    'center',
+        fontFamily:   "'Inter', sans-serif",
     });
 
     document.body.appendChild(toast);
@@ -163,3 +196,38 @@ function showToast(msg, type = 'success') {
         setTimeout(() => toast.remove(), 350);
     }, 4000);
 }
+
+/* ----------------------------------------------------------
+   8. ACTIVE NAV LINK (basado en scroll)
+   ---------------------------------------------------------- */
+const sections = document.querySelectorAll('section[id]');
+const navLinks  = document.querySelectorAll('.desktop-nav a');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        const top = section.offsetTop - 100;
+        if (window.scrollY >= top) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active-nav');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active-nav');
+        }
+    });
+}, { passive: true });
+
+/* Estilos para nav activo */
+const navStyle = document.createElement('style');
+navStyle.textContent = `
+    .desktop-nav a.active-nav {
+        color: var(--accent-2) !important;
+    }
+    .desktop-nav a.active-nav::after {
+        width: 100% !important;
+    }
+`;
+document.head.appendChild(navStyle);
